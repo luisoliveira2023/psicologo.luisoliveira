@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luisoliveira2023.github.io/psicologo.luisoliveira/sitemap.xml
