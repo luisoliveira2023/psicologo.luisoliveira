@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luiz Oliveira — Psicólogo Clínico e Social | Campinas</title>
+  <meta name="description" content="Luiz Oliveira — Psicólogo clínico e social. Atendimentos individual, grupos e acompanhamento psicossocial. Trabalho com psicanálise, racialidade, masculinidades e SUAS." />
+  <meta property="og:title" content="Luiz Oliveira — Psicólogo Clínico e Social" />
+  <meta property="og:description" content="Atendimento online e presencial. Reflexões clínicas e ensaios sobre raça, masculinidades, sono e corpo." />
+  <meta property="og:type" content="website" />
+  <meta name="author" content="Luiz Oliveira" />
+  <link rel="icon" href="data:," />
+  <style>
+    :root{
+      --bg:#f7f5f1;
+      --muted:#6b6b6b;
+      --accent:#7b3f2f; /* terracota */
+      --accent-2:#3b5a46; /* verde musgo */
+      --card:#ffffff;
+      --maxw:1000px;
+      --radius:12px;
+      --gap:1.1rem;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#111; margin:0; line-height:1.5}
+    header{background:linear-gradient(180deg, rgba(123,63,47,0.07), transparent); border-bottom:1px solid rgba(0,0,0,0.04)}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:1.6rem}
+    nav{display:flex; align-items:center; justify-content:space-between; gap:1rem}
+    .brand{display:flex; align-items:center; gap:.8rem}
+    .brand h1{font-family:'Merriweather',serif; margin:0; font-size:1.05rem; color:var(--accent-2)}
+    .navlinks{display:flex; gap:.8rem}
+    .navlinks a{color:var(--muted); text-decoration:none; padding:.35rem .6rem; border-radius:8px}
+    .navlinks a:hover{background:rgba(59,90,70,0.06); color:#111}
+    .hero{display:grid; grid-template-columns:1fr; gap:1.2rem; align-items:center; padding:2.2rem 0}
+    .hero-left{padding:1rem}
+    .h-title{font-family:'Merriweather',serif; font-size:1.6rem; margin:0 0 .6rem; color:var(--accent)}
+    .lead{color:var(--muted); margin:0 0 1rem}
+    .cta{display:inline-block; background:var(--accent); color:#fff; padding:.6rem 1rem; border-radius:10px; text-decoration:none}
+    .grid{display:grid; gap:1rem}
+    section{padding:2rem 0}
+    .card{background:var(--card); border-radius:var(--radius); padding:1.2rem; box-shadow:0 6px 18px rgba(11,11,11,0.04)}
+    .two{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem}
+    .meta{font-size:.85rem; color:var(--muted)}
+    footer{padding:2rem 0; border-top:1px solid rgba(0,0,0,0.04); color:var(--muted)}
+    .whatsapp{position:fixed; right:18px; bottom:18px; background:var(--accent-2); color:#fff; padding:.8rem; border-radius:999px; box-shadow:0 8px 20px rgba(0,0,0,0.12); text-decoration:none}
+    .avatar{width:96px; height:96px; border-radius:10px; object-fit:cover}
+    .tags{display:flex; gap:.4rem; flex-wrap:wrap}
+    .tag{background:rgba(123,63,47,0.08); color:var(--accent); padding:.25rem .5rem; border-radius:999px; font-size:.8rem}
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 380px}
+      .h-title{font-size:2rem}
+    }
+    /* accessible focus */
+    a:focus, button:focus{outline:3px solid rgba(59,90,70,0.15); outline-offset:2px}
+    .essay-list{display:grid; gap:.8rem}
+    .essay-item{display:flex; gap:.8rem; align-items:flex-start}
+    .small{font-size:.9rem}
+    .muted{color:var(--muted)}
+    .contact-grid{display:grid; grid-template-columns:1fr; gap:1rem}
+    .form-row{display:flex; gap:.6rem}
+    input, textarea{width:100%; padding:.6rem; border-radius:8px; border:1px solid rgba(0,0,0,0.08)}
+    button.primary{background:var(--accent); color:#fff; padding:.6rem 1rem; border-radius:8px; border:0}
+    nav .menu-toggle{display:none}
+    /* simple markdown styling for essays */
+    .essay-content h2{font-family:'Merriweather',serif}
+    .byline{font-size:.85rem;color:var(--muted);margin-bottom:.6rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Navegação principal">
+        <div class="brand">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#7b3f2f"/></svg>
+          <h1>Luiz Oliveira</h1>
+        </div>
+        <div class="navlinks" role="navigation">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#ensaios">Ensaios</a>
+          <a href="#abordagem">Abordagem</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="wrap">
+      <section class="hero">
+        <div class="hero-left">
+          <p class="meta">Psicólogo Clínico e Social — CRP/SP</p>
+          <h2 class="h-title">Escuta profunda. Clínica que atravessa o social.</h2>
+          <p class="lead">Atendo pessoas adultas em processo de sofrimento, transição e busca de novas formas de existir. Trabalho na interseção entre psicanálise, estudos pós-coloniais e a prática no SUAS, com atenção especial às questões raciais, masculinidades e vínculos familiares.</p>
+          <a class="cta" href="#contato">Agende uma conversa inicial</a>
+          <div style="height:1rem"></div>
+          <div class="tags" aria-hidden="true">
+            <span class="tag">Psicanálise</span>
+            <span class="tag">SUAS</span>
+            <span class="tag">Masculinidades</span>
+            <span class="tag">Racialidade</span>
+          </div>
+        </div>
+        <aside class="card" aria-label="Apresentação do profissional">
+          <div style="display:flex;gap:1rem;align-items:center">
+            <img class="avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Foto profissional de Luiz Oliveira"/>
+            <div>
+              <strong>Luiz Oliveira</strong>
+              <div class="muted small">Psicólogo Social e Clínico. Atendimento online e presencial (Campinas, SP).</div>
+              <div style="height:.6rem"></div>
+              <div class="small">Interesses: psicanálise, Frantz Fanon, Nelsa Neves Santos, Grada Kilomba, Winnicott. Trabalho com famílias, surdocegia e múltiplas deficiências no SUAS/CESA/CETA.</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="sobre">
+        <div class="card">
+          <h2>Sobre mim</h2>
+          <p class="meta">Trajetória clínica e política</p>
+          <p>Sou psicólogo social e clínico, com atuação no SUAS e em serviços de atenção a pessoas surdocegas e com múltiplas deficiências. Minha prática se constrói no encontro entre teoria e território: se a psicanálise oferece um caminho para ouvir o inconsciente, o trabalho no SUAS me ensinou que a clínica se amplia para o território e as políticas públicas.</p>
+
+          <h3>Uma prática atravessada pelo social</h3>
+          <p>Como homem negro de pele clara e profissional que atua com populações em vulnerabilidade, trago para o consultório a preocupação com a <strong>subjetivação racial</strong>, com as feridas coloniais e com os modos pelos quais o corpo e a imagem guardam tais dores. Nelsa Neves Santos nos lembra da historicidade dessas feridas; Grada Kilomba aponta a repetição do trauma racial; e Fanon nos orienta a pensar a descolonização do olhar.</p>
+
+          <blockquote aria-label="citação">
+            <p style="margin:0"><em>“O sujeito negro não nasce: ele é feito dentro de um sistema colonial que o antecede.”</em> — Nelsa Neves Santos (síntese interpretativa)</p>
+          </blockquote>
+
+          <h3>Trabalho no SUAS e prática clínica</h3>
+          <p>No SUAS, atendo famílias, participo de construção de planos de assistência, e organizo grupos reflexivos (com colagens, músicas e discussões). Essa prática me deu ferramentas para atuar em interface com serviços como educação, saúde e proteção social.</p>
+
+          <h3>Abordagem teórica</h3>
+          <p>Minha clínica dialoga com: psicanálise (Winnicott), estudos pós-coloniais (Fanon), estudos sobre trauma racial e memória (Grada Kilomba), e autoras negras que articulam raça e subjetividade (Nelsa Neves Santos). Winnicott ilumina a importância do espaço potencial e do cuidado; Fanon a urgência de pensar o corpo racializado; Kilomba a narrativa do trauma; e Nelsa a historicidade do sujeito.</p>
+        </div>
+      </section>
+
+      <section id="servicos">
+        <div class="card">
+          <h2>Serviços</h2>
+          <p class="meta">Clareza, ética e profundidade clínica</p>
+
+          <div class="two">
+            <div>
+              <h3>Psicoterapia Individual</h3>
+              <p class="small">Atendimento para adultos (online e presencial). Questões trabalhadas com frequência: ansiedade, angústia, conflitos de vínculo, masculinidades, racismo, identidade, repetição de padrões e sofrimento no trabalho.</p>
+              <p class="muted">Citação clínica:</p>
+              <p class="small"><em>“Não basta que o mundo mude. O sujeito também precisa mudar sua relação com o mundo.”</em> — Frantz Fanon (síntese)</p>
+            </div>
+            <div>
+              <h3>Acompanhamento Psicossocial</h3>
+              <p class="small">Atuação com famílias no SUAS: orientações, articulação com serviços, mediação de conflitos, acompanhamento de situações de violência e ressignificação do sofrimento.</p>
+            </div>
+            <div>
+              <h3>Grupos Terapêuticos</h3>
+              <p class="small">Grupos de masculinidades, grupos de mulheres e rodas de sonhos e imagens. Atividades com colagens, poemas, músicas e discussão reflexiva para promover suporte comunitário e criação de sentido.</p>
+            </div>
+            <div>
+              <h3>Atuação Interdisciplinar</h3>
+              <p class="small">Articulação com equipes de saúde, educação e assistência social, considerando risco social, disputas de guarda, e necessidades específicas de famílias.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ensaios">
+        <div class="card">
+          <h2>Ensaios & Reflexões</h2>
+          <p class="meta">Textos autorais que articulam clínica e teoria</p>
+
+          <div class="essay-list">
+            <article class="essay-item card">
+              <div>
+                <h3 style="margin:0">O corpo negro na psicanálise: entre feridas e criação</h3>
+                <div class="byline">Publicado: Novembro 2025 • 1.200 palavras</div>
+                <div class="essay-content small">
+                  <p>Resumo: Neste ensaio exploro como o corpo negro se constitui como memória e imagem, atravessado por processos de racialização que moldam as narrativas intersubjetivas. A leitura se apoia em Fanon e Nelsa Neves Santos para pensar a historicidade do sofrimento e em Winnicott para pensar o espaço potencial onde se reinventa o sujeito.</p>
+                  <p><strong>Trecho:</strong> "A pele guarda sentidos que excedem a experiência individual; ela é território político. Fanon nos mostra que a psicopatologia decolonial só se entende a partir da história que o corpo carrega."</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="essay-item card">
+              <div>
+                <h3 style="margin:0">Masculinidades possíveis: deslocamentos e contradições</h3>
+                <div class="byline">Publicado: Outubro 2025 • 900 palavras</div>
+                <div class="essay-content small">
+                  <p>Resumo: Reflexões a partir da prática clínica sobre como a figura paterna, abandono e reconexões tardias moldam modos de existir e sentir. Winnicott e Grada Kilomba oferecem chaves para pensar o ambiente e os traumas repetidos.</p>
+                  <p><strong>Trecho:</strong> "A masculinidade é um lugar atravessado por expectativas sociais; o trabalho terapêutico é abrir espaço para formas de habitar o mundo menos prescritivas."</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div style="height:1rem"></div>
+          <a href="#" class="small">Ver todos os ensaios</a>
+        </div>
+      </section>
+
+      <section id="abordagem">
+        <div class="card">
+          <h2>Como é um processo terapêutico comigo</h2>
+          <p class="meta">Ritmo, ética e prática</p>
+          <p>Minha prática é marcada por uma escuta pausada, que respeita o tempo do sujeito. Em cada sessão buscamos nomear padrões, imagens e repetições — e a partir daí criar possibilidades transformadoras. Trabalho com sonhos, imagens, colagens e verbalização, sempre atento ao contexto social que molda o sofrimento.</p>
+
+          <h3>O que você pode esperar</h3>
+          <ul>
+            <li>Escuta ética e sigilosa (CRP/SP)</li>
+            <li>Respeito ao tempo do processo</li>
+            <li>Trabalho com corpo, imagem e narrativa</li>
+            <li>Integração entre clínica individual e intervenções na rede (quando necessário)</li>
+          </ul>
+
+          <blockquote>
+            <p style="margin:0"><em>"É no espaço potencial que o sujeito cria e encontra a si mesmo."</em> — Donald Winnicott (síntese)</p>
+          </blockquote>
+
+          <h3>Nota ética</h3>
+          <p>Atendo seguindo as normas do Conselho Federal de Psicologia: sigilo profissional, consentimento informado e encaminhamentos quando necessários. Meu CRP está disponível mediante contato.</p>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="card">
+          <h2>Contato e Agendamento</h2>
+          <p class="meta">Informações práticas</p>
+          <div class="contact-grid">
+            <div>
+              <p class="small"><strong>E-mail:</strong> <a href="mailto:luiz.exemplo@email.com">luiz.exemplo@email.com</a></p>
+              <p class="small"><strong>WhatsApp:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+              <p class="small"><strong>Atendimento:</strong> Online (todo o Brasil) e presencial (Campinas, SP)</p>
+              <p class="small"><strong>Política:</strong> Sigilo profissional e cancelamento com 24h de antecedência.</p>
+            </div>
+
+            <form action="https://formspree.io/f/maypqlra" method="POST" aria-label="Formulário de contato">
+              <label class="small">Nome</label>
+              <input type="text" name="name" required />
+              <label class="small">E-mail</label>
+              <input type="email" name="email" required />
+              <label class="small">Mensagem</label>
+              <textarea name="message" rows="5" required></textarea>
+              <div style="height:.6rem"></div>
+              <button type="submit" class="primary">Enviar mensagem</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:600">Luiz Oliveira — Psicólogo</div>
+          <div class="muted small">Atendimento clínico e psicossocial. CRP/SP (disponível mediante contato)</div>
+        </div>
+        <div class="muted small">© " + new Date().getFullYear() + " — Todos os direitos reservados</div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5511999999999" aria-label="Conversar via WhatsApp">WhatsApp</a>
+
+  <script>
+    // small script to fix dynamic year in footer
+    (function(){
+      try{document.querySelector('footer .wrap div div:last-child').innerText = '© ' + new Date().getFullYear() + ' — Todos os direitos reservados'}catch(e){/*silent*/}
+    })();
+  </script>
+</body>
+</html>
