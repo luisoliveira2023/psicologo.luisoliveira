@@ -1,275 +1,3970 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Luiz Oliveira — Psicólogo Clínico e Social | Campinas</title>
-  <meta name="description" content="Luiz Oliveira — Psicólogo clínico e social. Atendimentos individual, grupos e acompanhamento psicossocial. Trabalho com psicanálise, racialidade, masculinidades e SUAS." />
-  <meta property="og:title" content="Luiz Oliveira — Psicólogo Clínico e Social" />
-  <meta property="og:description" content="Atendimento online e presencial. Reflexões clínicas e ensaios sobre raça, masculinidades, sono e corpo." />
-  <meta property="og:type" content="website" />
-  <meta name="author" content="Luiz Oliveira" />
-  <link rel="icon" href="data:," />
-  <style>
-    :root{
-      --bg:#f7f5f1;
-      --muted:#6b6b6b;
-      --accent:#7b3f2f; /* terracota */
-      --accent-2:#3b5a46; /* verde musgo */
-      --card:#ffffff;
-      --maxw:1000px;
-      --radius:12px;
-      --gap:1.1rem;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#111; margin:0; line-height:1.5}
-    header{background:linear-gradient(180deg, rgba(123,63,47,0.07), transparent); border-bottom:1px solid rgba(0,0,0,0.04)}
-    .wrap{max-width:var(--maxw); margin:0 auto; padding:1.6rem}
-    nav{display:flex; align-items:center; justify-content:space-between; gap:1rem}
-    .brand{display:flex; align-items:center; gap:.8rem}
-    .brand h1{font-family:'Merriweather',serif; margin:0; font-size:1.05rem; color:var(--accent-2)}
-    .navlinks{display:flex; gap:.8rem}
-    .navlinks a{color:var(--muted); text-decoration:none; padding:.35rem .6rem; border-radius:8px}
-    .navlinks a:hover{background:rgba(59,90,70,0.06); color:#111}
-    .hero{display:grid; grid-template-columns:1fr; gap:1.2rem; align-items:center; padding:2.2rem 0}
-    .hero-left{padding:1rem}
-    .h-title{font-family:'Merriweather',serif; font-size:1.6rem; margin:0 0 .6rem; color:var(--accent)}
-    .lead{color:var(--muted); margin:0 0 1rem}
-    .cta{display:inline-block; background:var(--accent); color:#fff; padding:.6rem 1rem; border-radius:10px; text-decoration:none}
-    .grid{display:grid; gap:1rem}
-    section{padding:2rem 0}
-    .card{background:var(--card); border-radius:var(--radius); padding:1.2rem; box-shadow:0 6px 18px rgba(11,11,11,0.04)}
-    .two{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem}
-    .meta{font-size:.85rem; color:var(--muted)}
-    footer{padding:2rem 0; border-top:1px solid rgba(0,0,0,0.04); color:var(--muted)}
-    .whatsapp{position:fixed; right:18px; bottom:18px; background:var(--accent-2); color:#fff; padding:.8rem; border-radius:999px; box-shadow:0 8px 20px rgba(0,0,0,0.12); text-decoration:none}
-    .avatar{width:96px; height:96px; border-radius:10px; object-fit:cover}
-    .tags{display:flex; gap:.4rem; flex-wrap:wrap}
-    .tag{background:rgba(123,63,47,0.08); color:var(--accent); padding:.25rem .5rem; border-radius:999px; font-size:.8rem}
-    @media(min-width:900px){
-      .hero{grid-template-columns:1fr 380px}
-      .h-title{font-size:2rem}
-    }
-    /* accessible focus */
-    a:focus, button:focus{outline:3px solid rgba(59,90,70,0.15); outline-offset:2px}
-    .essay-list{display:grid; gap:.8rem}
-    .essay-item{display:flex; gap:.8rem; align-items:flex-start}
-    .small{font-size:.9rem}
-    .muted{color:var(--muted)}
-    .contact-grid{display:grid; grid-template-columns:1fr; gap:1rem}
-    .form-row{display:flex; gap:.6rem}
-    input, textarea{width:100%; padding:.6rem; border-radius:8px; border:1px solid rgba(0,0,0,0.08)}
-    button.primary{background:var(--accent); color:#fff; padding:.6rem 1rem; border-radius:8px; border:0}
-    nav .menu-toggle{display:none}
-    /* simple markdown styling for essays */
-    .essay-content h2{font-family:'Merriweather',serif}
-    .byline{font-size:.85rem;color:var(--muted);margin-bottom:.6rem}
-  </style>
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luis Oliveira - Psicólogo clínico e social. Escuta profunda em psicanálise, racialidade e masculinidades. Atendimento online. Agende sua sessão.">
+    <meta name="keywords" content="psicólogo Campinas, psicanálise, terapia online, racialidade, masculinidades, SUAS, atendimento psicossocial">
+    <title>Luis Oliveira - Psicólogo | Psicanálise | Campinas-SP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Dancing+Script:wght@400;600&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-primaria: #A68A64;
+            --cor-secundaria: #5F7A6C;
+            --cor-acento: #D4AF37;
+            --cor-neutra: #FDFBF7;
+            --cor-texto: #3D3D3D;
+            --cor-texto-claro: #6B6B6B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-neutra);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Crimson Text', serif;
+            font-weight: 600;
+        }
+
+        .poetico {
+            font-family: 'Dancing Script', cursive;
+            color: var(--cor-primaria);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #A68A64 0%, #7A9A88 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Crimson Text', serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--cor-acento);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(166,138,100,0.92) 0%, rgba(95,122,108,0.92) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23A68A64" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitulo {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero .poetico-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #f5f1e8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--cor-acento);
+            color: var(--cor-texto);
+        }
+
+        .btn-primary:hover {
+            background: #C19F2F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--cor-primaria);
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--cor-primaria);
+        }
+
+        /* Quem Sou */
+        .quem-sou {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .foto-perfil {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .bio h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--cor-secundaria);
+        }
+
+        .bio p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--cor-texto-claro);
+        }
+
+        .bio ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .bio li::before {
+            content: "→";
+            color: var(--cor-acento);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Para Quem */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--cor-primaria);
+        }
+
+        .card p {
+            color: var(--cor-texto-claro);
+            font-size: 1rem;
+        }
+
+        /* Como Trabalho */
+        .trabalho-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .trabalho-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .trabalho-item h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--cor-secundaria);
+        }
+
+        .trabalho-item p {
+            color: var(--cor-texto-claro);
+            line-height: 1.8;
+        }
+
+        /* Formação */
+        .formacao-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .formacao-section {
+            margin-bottom: 3rem;
+        }
+
+        .formacao-section h3 {
+            font-size: 1.8rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--cor-acento);
+            padding-bottom: 0.5rem;
+        }
+
+        .formacao-section ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .formacao-section li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--cor-texto-claro);
+        }
+
+        .formacao-section li::before {
+            content: "•";
+            color: var(--cor-acento);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Serviços */
+        .servico-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .servico-box h3 {
+            font-size: 2rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .servico-box h4 {
+            font-size: 1.3rem;
+            color: var(--cor-secundaria);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .servico-box ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .servico-box li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .servico-box li::before {
+            content: "✓";
+            color: var(--cor-acento);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Blog */
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-post-content {
+            padding: 2rem;
+        }
+
+        .blog-post h3 {
+            font-size: 1.6rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .blog-post p {
+            color: var(--cor-texto-claro);
+            margin-bottom: 1rem;
+        }
+
+        .ler-mais {
+            color: var(--cor-acento);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            color: var(--cor-texto-claro);
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 1.5rem;
+        }
+
+        /* Contato */
+        .contato-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contato-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contato-item {
+            margin-bottom: 2rem;
+        }
+
+        .contato-item h3 {
+            font-size: 1.3rem;
+            color: var(--cor-primaria);
+            margin-bottom: 0.5rem;
+        }
+
+        .contato-item p, .contato-item a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+        }
+
+        .contato-item a:hover {
+            color: var(--cor-acento);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--cor-primaria);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--cor-secundaria);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--cor-secundaria);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+
+        /* WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.5);
+            z-index: 999;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding-top: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .poetico-text {
+                font-size: 1.1rem;
+            }
+
+            .quem-sou {
+                grid-template-columns: 1fr;
+            }
+
+            .contato-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+        }
+
+        /* Modal do Blog */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            background-color: var(--cor-neutra);
+            margin: 5% auto;
+            padding: 3rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            color: var(--cor-texto-claro);
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: var(--cor-primaria);
+        }
+
+        .modal-content h2 {
+            color: var(--cor-primaria);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .modal-content h3 {
+            color: var(--cor-secundaria);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .modal-content p {
+            color: var(--cor-texto-claro);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .modal-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .modal-content li {
+            margin-bottom: 0.8rem;
+            color: var(--cor-texto-claro);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav aria-label="Navegação principal">
-        <div class="brand">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#7b3f2f"/></svg>
-          <h1>Luiz Oliveira</h1>
-        </div>
-        <div class="navlinks" role="navigation">
-          <a href="#home">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#ensaios">Ensaios</a>
-          <a href="#abordagem">Abordagem</a>
-          <a href="#contato">Contato</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Luis Oliveira</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#processo">Processo</a></li>
+                <li><a href="#blog">Reflexões</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main id="home">
-    <div class="wrap">
-      <section class="hero">
-        <div class="hero-left">
-          <p class="meta">Psicólogo Clínico e Social — CRP/SP</p>
-          <h2 class="h-title">Escuta profunda. Clínica que atravessa o social.</h2>
-          <p class="lead">Atendo pessoas adultas em processo de sofrimento, transição e busca de novas formas de existir. Trabalho na interseção entre psicanálise, estudos pós-coloniais e a prática no SUAS, com atenção especial às questões raciais, masculinidades e vínculos familiares.</p>
-          <a class="cta" href="#contato">Agende uma conversa inicial</a>
-          <div style="height:1rem"></div>
-          <div class="tags" aria-hidden="true">
-            <span class="tag">Psicanálise</span>
-            <span class="tag">SUAS</span>
-            <span class="tag">Masculinidades</span>
-            <span class="tag">Racialidade</span>
-          </div>
-        </div>
-        <aside class="card" aria-label="Apresentação do profissional">
-          <div style="display:flex;gap:1rem;align-items:center">
-            <img class="avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Foto profissional de Luiz Oliveira"/>
-            <div>
-              <strong>Luiz Oliveira</strong>
-              <div class="muted small">Psicólogo Social e Clínico. Atendimento online e presencial (Campinas, SP).</div>
-              <div style="height:.6rem"></div>
-              <div class="small">Interesses: psicanálise, Frantz Fanon, Nelsa Neves Santos, Grada Kilomba, Winnicott. Trabalho com famílias, surdocegia e múltiplas deficiências no SUAS/CESA/CETA.</div>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Escuta profunda para histórias que pedem tempo</h1>
+            <p class="subtitulo">Psicólogo Clínico e Social | Atendimento Online</p>
+            <p class="poetico-text">
+                Às vezes o que nos dói não encontra palavra.<br>
+                Às vezes o que nos move é um gesto, um silêncio, um quase-dito.<br>
+                É nesse espaço entre a fala e o corpo que eu trabalho.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Agende sua primeira sessão</a>
+                <a href="#sobre" class="btn btn-secondary">Saiba mais sobre mim</a>
             </div>
-          </div>
-        </aside>
-      </section>
-
-      <section id="sobre">
-        <div class="card">
-          <h2>Sobre mim</h2>
-          <p class="meta">Trajetória clínica e política</p>
-          <p>Sou psicólogo social e clínico, com atuação no SUAS e em serviços de atenção a pessoas surdocegas e com múltiplas deficiências. Minha prática se constrói no encontro entre teoria e território: se a psicanálise oferece um caminho para ouvir o inconsciente, o trabalho no SUAS me ensinou que a clínica se amplia para o território e as políticas públicas.</p>
-
-          <h3>Uma prática atravessada pelo social</h3>
-          <p>Como homem negro de pele clara e profissional que atua com populações em vulnerabilidade, trago para o consultório a preocupação com a <strong>subjetivação racial</strong>, com as feridas coloniais e com os modos pelos quais o corpo e a imagem guardam tais dores. Nelsa Neves Santos nos lembra da historicidade dessas feridas; Grada Kilomba aponta a repetição do trauma racial; e Fanon nos orienta a pensar a descolonização do olhar.</p>
-
-          <blockquote aria-label="citação">
-            <p style="margin:0"><em>“O sujeito negro não nasce: ele é feito dentro de um sistema colonial que o antecede.”</em> — Nelsa Neves Santos (síntese interpretativa)</p>
-          </blockquote>
-
-          <h3>Trabalho no SUAS e prática clínica</h3>
-          <p>No SUAS, atendo famílias, participo de construção de planos de assistência, e organizo grupos reflexivos (com colagens, músicas e discussões). Essa prática me deu ferramentas para atuar em interface com serviços como educação, saúde e proteção social.</p>
-
-          <h3>Abordagem teórica</h3>
-          <p>Minha clínica dialoga com: psicanálise (Winnicott), estudos pós-coloniais (Fanon), estudos sobre trauma racial e memória (Grada Kilomba), e autoras negras que articulam raça e subjetividade (Nelsa Neves Santos). Winnicott ilumina a importância do espaço potencial e do cuidado; Fanon a urgência de pensar o corpo racializado; Kilomba a narrativa do trauma; e Nelsa a historicidade do sujeito.</p>
         </div>
-      </section>
+    </section>
 
-      <section id="servicos">
-        <div class="card">
-          <h2>Serviços</h2>
-          <p class="meta">Clareza, ética e profundidade clínica</p>
-
-          <div class="two">
+    <!-- Quem Sou -->
+    <section id="sobre">
+        <h2 class="section-title">Quem Sou</h2>
+        <div class="quem-sou">
             <div>
-              <h3>Psicoterapia Individual</h3>
-              <p class="small">Atendimento para adultos (online e presencial). Questões trabalhadas com frequência: ansiedade, angústia, conflitos de vínculo, masculinidades, racismo, identidade, repetição de padrões e sofrimento no trabalho.</p>
-              <p class="muted">Citação clínica:</p>
-              <p class="small"><em>“Não basta que o mundo mude. O sujeito também precisa mudar sua relação com o mundo.”</em> — Frantz Fanon (síntese)</p>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500' viewBox='0 0 400 500'%3E%3Crect fill='%238B6F47' width='400' height='500'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='white' text-anchor='middle' dy='.3em'%3ESua Foto Profissional%3C/text%3E%3C/svg%3E" alt="Luis Oliveira - Psicólogo" class="foto-perfil">
             </div>
-            <div>
-              <h3>Acompanhamento Psicossocial</h3>
-              <p class="small">Atuação com famílias no SUAS: orientações, articulação com serviços, mediação de conflitos, acompanhamento de situações de violência e ressignificação do sofrimento.</p>
+            <div class="bio">
+                <h3>Luis Oliveira</h3>
+                <p><strong>Psicólogo Clínico e Social | CRP 06/159433</strong></p>
+                <p>Formado em Psicologia pela Universidade São Francisco.</p>
+                
+                <p>Minha clínica é uma travessia entre:</p>
+                <ul>
+                    <li>Psicanálise e experiência social</li>
+                    <li>Racialidade, corpo e território</li>
+                    <li>Sonhos, imagens e afetos</li>
+                </ul>
+                
+                <p>Trabalho no SUAS, acompanhando famílias, grupos e pessoas atravessadas por violências, desigualdades e buscas por outros modos de existir.</p>
+                
+                <p><em>Cada pessoa traz consigo um mundo inteiro e esse mundo merece ser recebido com cuidado, sem pressa.</em></p>
+                
+                <a href="#contato" class="btn btn-primary" style="margin-top: 2rem;">Quero conversar</a>
             </div>
-            <div>
-              <h3>Grupos Terapêuticos</h3>
-              <p class="small">Grupos de masculinidades, grupos de mulheres e rodas de sonhos e imagens. Atividades com colagens, poemas, músicas e discussão reflexiva para promover suporte comunitário e criação de sentido.</p>
-            </div>
-            <div>
-              <h3>Atuação Interdisciplinar</h3>
-              <p class="small">Articulação com equipes de saúde, educação e assistência social, considerando risco social, disputas de guarda, e necessidades específicas de famílias.</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="ensaios">
-        <div class="card">
-          <h2>Ensaios & Reflexões</h2>
-          <p class="meta">Textos autorais que articulam clínica e teoria</p>
+    <!-- Para Quem -->
+    <section style="background: white;">
+        <h2 class="section-title">Para Quem é Este Trabalho</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+            Minha escuta acolhe quem vive:
+        </p>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Angústias Silenciosas</h3>
+                <p>Aquilo que pesa, mas não encontra nome. O que incomoda, mas parece sem explicação.</p>
+            </div>
+            <div class="card">
+                <h3>Efeitos do Racismo</h3>
+                <p>A exaustão diária de existir em um corpo racializado. As feridas que o mundo deixa na alma.</p>
+            </div>
+            <div class="card">
+                <h3>Pessoas que Precisam Respirar</h3>
+                <p>Pessoas cansadas de sustentar armaduras. Que querem afeto sem violência, vulnerabilidade sem vergonha.</p>
+            </div>
+            <div class="card">
+                <h3>Crises de Identidade e Transições</h3>
+                <p>Quando a vida pede mudança, mas o medo paralisa. Quando não sabemos mais quem somos.</p>
+            </div>
+            <div class="card">
+                <h3>Conflitos Familiares e Vínculos Frágeis</h3>
+                <p>Histórias que se repetem, laços que machucam, heranças que pesam.</p>
+            </div>
+            <div class="card">
+                <h3>Esgotamento e Sobrecarga</h3>
+                <p>Trabalho que adoece, cuidado que sufoca, responsabilidades que não param.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Quero agendar uma sessão</a>
+        </div>
+    </section>
 
-          <div class="essay-list">
-            <article class="essay-item card">
-              <div>
-                <h3 style="margin:0">O corpo negro na psicanálise: entre feridas e criação</h3>
-                <div class="byline">Publicado: Novembro 2025 • 1.200 palavras</div>
-                <div class="essay-content small">
-                  <p>Resumo: Neste ensaio exploro como o corpo negro se constitui como memória e imagem, atravessado por processos de racialização que moldam as narrativas intersubjetivas. A leitura se apoia em Fanon e Nelsa Neves Santos para pensar a historicidade do sofrimento e em Winnicott para pensar o espaço potencial onde se reinventa o sujeito.</p>
-                  <p><strong>Trecho:</strong> "A pele guarda sentidos que excedem a experiência individual; ela é território político. Fanon nos mostra que a psicopatologia decolonial só se entende a partir da história que o corpo carrega."</p>
+    <!-- Como Trabalho -->
+    <section>
+        <h2 class="section-title">Como Trabalho</h2>
+        <div class="trabalho-items">
+            <div class="trabalho-item">
+                <h3>Psicanálise Viva</h3>
+                <p>Não um manual de técnicas, mas uma escuta que acompanha seu ritmo, como quem acompanha um rio: às vezes lento, às vezes turbulento, às vezes subterrâneo.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Corpo, Território, Sociedade</h3>
+                <p>Seu sofrimento não é só seu. Ele conversa com suas ruas, seus afetos, sua cor, sua história. Aqui não separamos o íntimo do coletivo.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Imagens, Sonhos, Gestos</h3>
+                <p>O inconsciente respira em imagens. Trabalhamos com o que aparece em sonhos, sensações, memórias teimosas.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Ritmo Respeitoso</h3>
+                <p>Não há pressa. Cada palavra tem espaço para ressoar. Cada encontro é único.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação -->
+    <section style="background: white;">
+        <h2 class="section-title">Formação e Experiência</h2>
+        <div class="formacao-content">
+            <div class="formacao-section">
+                <h3>Formação Acadêmica</h3>
+                <ul>
+                    <li>Psicólogo pela Universidade São Francisco</li>
+                    <li>Especialização em Psicanálise Clínica</li>
+                    <li>CRP: 06/159433</li>
+                </ul>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Experiência Profissional</h3>
+                <ul>
+                    <li>Psicólogo no Sistema Único de Assistência Social (SUAS)</li>
+                    <li>Atuação com famílias em vulnerabilidade social e violência doméstica</li>
+                    <li>Trabalho com pessoas com deficiência visual, com surdo-cegueira e múltiplas deficiências</li>
+                    <li>Atendimento clínico individual e grupal desde 2018</li>
+                    <li>Mediação com redes de proteção (escolas, saúde, conselhos tutelares)</li>
+                    <li>Grupos reflexivos sobre masculinidades, cuidadores de pessoas com deficiência, adolescências, violência doméstica contra mulheres e racialidade</li>
+                </ul>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Referências Teóricas</h3>
+                <p>Psicanálise Freudiana, Frantz Fanon, Grada Kilomba e Nelsa Santos.</p>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Parcerias Institucionais</h3>
+                <ul>
+                    <li><a href="https://www.setacampinas.org.br/" target="_blank" style="color: var(--cor-acento);">Serviço Especializado de Proteção Social à Família (SESF)</a></li>
+                    <li><a href="https://www.caiscampinas.org.br/" target="_blank" style="color: var(--cor-acento);">Centro de Apoio e Integração do Surdocego e Múltiplo Deficiente (CAIS)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2 class="section-title">Serviços</h2>
+        
+        <div class="servico-box">
+            <h3>Atendimento Individual Online</h3>
+            <p><em>Para adolescentes e adultos</em></p>
+            <p>Espaço seguro para sustentar perguntas e encontrar caminhos.</p>
+            
+            <h4>Posso ajudar com:</h4>
+            <ul>
+                <li>Orientação e organização de cuidado familiar</li>
+                <li>Mediação com escolas, unidades de saúde, CRAS/CREAS</li>
+                <li>Compreensão de direitos e acesso a serviços</li>
+                <li>Acompanhamento de casos complexos</li>
+                <li>Situações de violência doméstica e violação de direitos</li>
+            </ul>
+            
+            <p style="margin-top: 1.5rem;"><strong>Atendimento:</strong> Online</p>
+            <p><strong>Valores:</strong> Consultar (possibilidade de valores sociais)</p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Solicitar informações</a>
+        </div>
+
+        <div class="servico-box">
+            <h3>Grupos Terapêuticos e Rodas de Conversa</h3>
+            
+            <h4>Grupo: Masculinidades Possíveis</h4>
+            <p>Um lugar para homens que querem se encontrar consigo mesmos sem violência, sem armadura, sem medo do afeto.</p>
+            <ul>
+                <li>Formato: encontros quinzenais/mensais</li>
+                <li>Duração: 1h30</li>
+                <li>Vagas: limitadas</li>
+            </ul>
+            
+            <h4>Grupo: Mulheres em Conversa</h4>
+            <p>Espaço de acolhimento, palavra, vínculo e cuidado entre mulheres.</p>
+            
+            <h4>Grupo: Caminhos para a Adolescência</h4>
+            <p>Onde o inconsciente fala em cenas, símbolos e movimentos que transformam a vida de dentro para fora.</p>
+            
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Quero participar de um grupo</a>
+        </div>
+    </section>
+
+    <!-- Processo Terapêutico -->
+    <section id="processo" style="background: white;">
+        <h2 class="section-title">Como é o Processo Terapêutico</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 1.3rem; text-align: center; margin-bottom: 3rem; color: var(--cor-primaria); font-style: italic;">
+                A terapia comigo não é um procedimento. É um encontro.
+            </p>
+            
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+                E encontros têm tempo, gestos, hesitações e descobertas.<br>
+                Há quem chegue falando muito. Há quem chegue falando pouco.<br>
+                Há quem chegue com raiva, com medo, com pressa, com sonhos estranhos, com uma dor que não cabe no peito.<br><br>
+                <strong>Eu recebo cada pessoa no ritmo em que ela puder existir.</strong>
+            </p>
+
+            <div class="servico-box">
+                <h3>O que esperar das sessões</h3>
+                
+                <h4>Primeiro Encontro</h4>
+                <ul>
+                    <li>Conversamos sobre seu momento atual</li>
+                    <li>Você conta o que te trouxe até aqui</li>
+                    <li>Avaliamos juntos se faz sentido continuarmos</li>
+                    <li>Esclareço dúvidas sobre o processo</li>
+                </ul>
+                
+                <h4>Frequência e Duração</h4>
+                <ul>
+                    <li>Sessões de 50 minutos</li>
+                    <li>Frequência combinada de acordo com sua necessidade (geralmente semanal)</li>
+                    <li>Processo sem prazo determinado, cada pessoa tem seu tempo</li>
+                </ul>
+                
+                <h4>O ritmo da escuta</h4>
+                <p>O mundo acelera; a clínica desacelera. Aqui, cada palavra tem espaço para ressoar. Trabalhamos no seu tempo, não na pressa do mundo.</p>
+            </div>
+
+            <div class="servico-box">
+                <h3>Com o que Trabalhamos</h3>
+                
+                <h4>História e Território</h4>
+                <p>Sua dor conversa com suas ruas, seus afetos, seus silêncios, sua cor, seu bairro, seus vínculos.</p>
+                
+                <h4>O Entre-Lugar: Subjetivo e Social</h4>
+                <p>Onde o íntimo e o político se encontram. Olhamos para o inconsciente sem perder de vista o mundo.</p>
+                
+                <h4>Imagens, Sonhos, Corpo</h4>
+                <p>O inconsciente respira em imagens, às vezes uma cena onírica, às vezes um gesto repetido, às vezes uma sensação no peito.</p>
+                
+                <h4>Vínculos e Famílias</h4>
+                <p>As histórias familiares são rios profundos. Às vezes precisamos voltar neles para entender por que nossas escolhas sempre tocam a mesma pedra.</p>
+                
+                <h4>Racialidade, Masculinidade, Corpo</h4>
+                <p>Aqui há espaço para falar do que machuca e do que sustenta:</p>
+                <ul>
+                    <li>A dor cansada do racismo</li>
+                    <li>A dificuldade de ser mulher/homem sem violência</li>
+                    <li>O corpo que endurece para sobreviver</li>
+                    <li>Os afetos que nunca tiveram lugar</li>
+                    <li>A tentativa de criar outra forma de existir</li>
+                </ul>
+            </div>
+
+            <div class="servico-box">
+                <h3>Sigilo e Ética</h3>
+                <p>Todo o processo é regido pelo sigilo profissional e pelo Código de Ética da Psicologia. Seu espaço é seguro, protegido e respeitoso.</p>
+                <p style="font-style: italic; margin-top: 2rem; font-size: 1.1rem; color: var(--cor-primaria);">
+                    A terapia comigo é uma travessia.<br>
+                    E toda travessia começa quando alguém se permite dar o primeiro passo.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Estou pronto para começar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2 class="section-title">Reflexões</h2>
+        <div class="blog-posts">
+            <div class="blog-post" onclick="openModal('modal1')">
+                <div class="blog-post-content">
+                    <h3>O que é uma escuta profunda?</h3>
+                    <p>Um ensaio sobre ritmo, silêncio e clínica viva. Como a escuta se torna gesto ético, político e transformador.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
                 </div>
-              </div>
-            </article>
-
-            <article class="essay-item card">
-              <div>
-                <h3 style="margin:0">Masculinidades possíveis: deslocamentos e contradições</h3>
-                <div class="byline">Publicado: Outubro 2025 • 900 palavras</div>
-                <div class="essay-content small">
-                  <p>Resumo: Reflexões a partir da prática clínica sobre como a figura paterna, abandono e reconexões tardias moldam modos de existir e sentir. Winnicott e Grada Kilomba oferecem chaves para pensar o ambiente e os traumas repetidos.</p>
-                  <p><strong>Trecho:</strong> "A masculinidade é um lugar atravessado por expectativas sociais; o trabalho terapêutico é abrir espaço para formas de habitar o mundo menos prescritivas."</p>
+            </div>
+            <div class="blog-post" onclick="openModal('modal2')">
+                <div class="blog-post-content">
+                    <h3>Racismo e subjetividade</h3>
+                    <p>Como o racismo habita o inconsciente e o que a psicanálise pode oferecer. Ecos de Fanon na clínica contemporânea.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
                 </div>
-              </div>
-            </article>
-          </div>
-
-          <div style="height:1rem"></div>
-          <a href="#" class="small">Ver todos os ensaios</a>
+            </div>
+            <div class="blog-post" onclick="openModal('modal3')">
+                <div class="blog-post-content">
+                    <h3>Masculinidades possíveis</h3>
+                    <p>Quando o homem aprende a respirar. Reflexões sobre vulnerabilidade, afeto e reconstrução de si.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal4')">
+                <div class="blog-post-content">
+                    <h3>Entre políticas públicas e inconsciente</h3>
+                    <p>Notas de um psicólogo no SUAS. A clínica no território, onde subjetividade e desigualdade se encontram.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section id="abordagem">
-        <div class="card">
-          <h2>Como é um processo terapêutico comigo</h2>
-          <p class="meta">Ritmo, ética e prática</p>
-          <p>Minha prática é marcada por uma escuta pausada, que respeita o tempo do sujeito. Em cada sessão buscamos nomear padrões, imagens e repetições — e a partir daí criar possibilidades transformadoras. Trabalho com sonhos, imagens, colagens e verbalização, sempre atento ao contexto social que molda o sofrimento.</p>
-
-          <h3>O que você pode esperar</h3>
-          <ul>
-            <li>Escuta ética e sigilosa (CRP/SP)</li>
-            <li>Respeito ao tempo do processo</li>
-            <li>Trabalho com corpo, imagem e narrativa</li>
-            <li>Integração entre clínica individual e intervenções na rede (quando necessário)</li>
-          </ul>
-
-          <blockquote>
-            <p style="margin:0"><em>"É no espaço potencial que o sujeito cria e encontra a si mesmo."</em> — Donald Winnicott (síntese)</p>
-          </blockquote>
-
-          <h3>Nota ética</h3>
-          <p>Atendo seguindo as normas do Conselho Federal de Psicologia: sigilo profissional, consentimento informado e encaminhamentos quando necessários. Meu CRP está disponível mediante contato.</p>
-        </div>
-      </section>
-
-      <section id="contato">
-        <div class="card">
-          <h2>Contato e Agendamento</h2>
-          <p class="meta">Informações práticas</p>
-          <div class="contact-grid">
-            <div>
-              <p class="small"><strong>E-mail:</strong> <a href="mailto:luiz.exemplo@email.com">luiz.exemplo@email.com</a></p>
-              <p class="small"><strong>WhatsApp:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-              <p class="small"><strong>Atendimento:</strong> Online (todo o Brasil) e presencial (Campinas, SP)</p>
-              <p class="small"><strong>Política:</strong> Sigilo profissional e cancelamento com 24h de antecedência.</p>
+    <!-- FAQ -->
+    <section style="background: white;">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como sei se preciso de terapia?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Se você sente que algo não vai bem, se há incômodos repetidos, se as mesmas situações se repetem, se você quer se entender melhor ou atravessar um momento difícil, a terapia pode ajudar.</p>
+                </div>
             </div>
 
-            <form action="https://formspree.io/f/maypqlra" method="POST" aria-label="Formulário de contato">
-              <label class="small">Nome</label>
-              <input type="text" name="name" required />
-              <label class="small">E-mail</label>
-              <input type="email" name="email" required />
-              <label class="small">Mensagem</label>
-              <textarea name="message" rows="5" required></textarea>
-              <div style="height:.6rem"></div>
-              <button type="submit" class="primary">Enviar mensagem</button>
-            </form>
-          </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Quanto tempo dura um processo terapêutico?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cada pessoa tem seu tempo. Não há prazo determinado. Alguns processos são mais breves, outros pedem mais tempo de escuta e elaboração.</p>
+                </div>
+            </div>
 
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Qual a diferença entre psicólogo e psiquiatra?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>O psicólogo trabalha através da escuta, da palavra e das imagens. O psiquiatra é médico e pode prescrever medicamentos. Muitas vezes o trabalho é complementar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como funcionam as sessões online?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>As sessões online têm a mesma duração e seriedade das presenciais. Usamos plataformas seguras (Google Meet, Zoom) e o sigilo é totalmente preservado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Você atende pelo convênio?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim, atendo pelo <a href="https://smartcardsaude.com.br/" target="_blank" style="color: var(--cor-acento);">SmartCard Saúde</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Posso fazer terapia mesmo sem uma "crise"?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim. A terapia não é só para momentos de crise. É também para quem quer se conhecer melhor, crescer, elaborar histórias antigas ou simplesmente ter um espaço de escuta.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Você atende crianças e adolescentes?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Atendo apenas adolescentes a partir de 12 anos e adultos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como funciona o sigilo profissional?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Tudo o que você disser nas sessões é sigiloso. Não compartilho informações com ninguém, exceto em situações previstas pelo Código de Ética (risco à vida, por exemplo).</p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-    </div>
-  </main>
+    <!-- Contato -->
+    <section id="contato">
+        <h2 class="section-title">Vamos Conversar</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+            Se você sente que há algo pedindo para ser dito, ouvido ou transformado, talvez seja hora de começarmos.
+        </p>
 
-  <footer>
-    <div class="wrap">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
-        <div>
-          <div style="font-weight:600">Luiz Oliveira — Psicólogo</div>
-          <div class="muted small">Atendimento clínico e psicossocial. CRP/SP (disponível mediante contato)</div>
+        <div class="contato-grid">
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h3>WhatsApp</h3>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">(19) 98369-0238</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>E-mail</h3>
+                    <a href="mailto:luis_felipecps@hotmail.com">luis_felipecps@hotmail.com</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Formulário de Agendamento</h3>
+                    <a href="https://forms.gle/UQVAi7M12VT4iryv5" target="_blank">Preencher formulário</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Horários Disponíveis</h3>
+                    <p>Segunda a Sexta</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/psicologo.luisoliveira/" target="_blank">Instagram</a>
+                        <a href="http://www.tiktok.com/@psi.luisoliveira" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h3>Informações Profissionais</h3>
+                    <p><strong>Luis Oliveira</strong><br>
+                    Psicólogo Clínico e Social<br>
+                    CRP: 06/159433<br>
+                    Formação: Universidade São Francisco<br>
+                    Referencial teórico: Psicanálise</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Consultório</h3>
+                    <p>R. Alfredo Pereira de Castro, 71<br>
+                    Jardim Uruguai, Campinas - SP<br>
+                    CEP: 13059-861</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Valores e Pagamento</h3>
+                    <p><strong>Sessão Individual:</strong> A combinar<br>
+                    <strong>Formas de pagamento:</strong> PIX ou transferência<br>
+                    <strong>Convênio:</strong> <a href="https://smartcardsaude.com.br/" target="_blank" style="color: var(--cor-acento);">SmartCard Saúde</a></p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Política de Cancelamento</h3>
+                    <p>Cancelamentos ou remarcações devem ser feitos com 24h de antecedência.</p>
+                </div>
+            </div>
         </div>
-        <div class="muted small">© " + new Date().getFullYear() + " — Todos os direitos reservados</div>
-      </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 15px;">
+            <p style="color: var(--cor-texto-claro); margin-bottom: 1rem;">
+                <strong>Sigilo e Segurança:</strong> Todos os atendimentos seguem rigorosamente o Código de Ética do Psicólogo e as normas do Conselho Federal de Psicologia. Suas informações são sigilosas e protegidas.
+            </p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Agendar primeira sessão</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Luis Oliveira - Psicólogo CRP 06/159433</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Todos os direitos reservados | Sigilo profissional garantido</p>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+        💬
+    </a>
+
+    <!-- Modais do Blog -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">×</span>
+            <h2>O que é uma escuta profunda?</h2>
+            <p><em>Um ensaio sobre ritmo, silêncio e clínica viva</em></p>
+            
+            <p>A escuta profunda é o coração do meu trabalho clínico. Ela não nasce apenas do ouvido — nasce do corpo inteiro, da história que cada pessoa carrega, das violências que a atravessaram e das potências que ainda podem ser descobertas.</p>
+            
+            <p>Como psicólogo social e clínico, formado pelas experiências do território, pela psicanálise que diálogo com Winnicott, Freud, Fanon, Grada Kilomba e Nelsa Neves Santos, pela música que me constituiu e pelo cotidiano do SUAS, aprendi que escutar profundamente é um gesto ético. Um modo de estar. Um posicionamento diante da vida.</p>
+            
+            <h3>Ritmo: um tempo que acolhe</h3>
+            <p>Minha clínica tem um ritmo mais pausado — não por estilo, mas por escolha. Cada pessoa tem seu compasso interno, e grande parte do sofrimento começa quando somos obrigados a viver no ritmo dos outros. No consultório e na assistência social, desacelerar é um ato político: é afirmar que existe espaço para respirar, narrar e existir sem pressa.</p>
+            
+            <h3>Silêncio: onde o indizível encontra lugar</h3>
+            <p>O silêncio não é ausência. Ele tem densidade, textura, um corpo próprio. É nele que o trauma se anuncia, que a dissociação fala, que a palavra encontra coragem para nascer. Mas também aprendi — com Fanon e Kilomba — que há silêncios que foram impostos: silêncios da colonialidade, do racismo, da vergonha transmitida entre gerações.</p>
+            
+            <h3>Clínica viva: presença que sustenta</h3>
+            <p>A clínica viva é uma clínica que não se repete de forma mecânica. Ela não é um ritual automático. Ela é encontro — e encontro implica risco, criação, responsabilidade e presença. Escutar profundamente é deixar-se tocar sem perder o contorno.</p>
+            
+            <p><strong>Em essência, a escuta profunda é um ritmo que respeita a singularidade, um silêncio que sustenta, uma presença viva, uma ética que atravessa o fazer clínico, um gesto político e afetivo.</strong></p>
+        </div>
     </div>
-  </footer>
 
-  <a class="whatsapp" href="https://wa.me/5511999999999" aria-label="Conversar via WhatsApp">WhatsApp</a>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">×</span>
+            <h2>Racismo e subjetividade</h2>
+            <p><em>Como o racismo habita o inconsciente e o que a psicanálise pode oferecer</em></p>
+            
+            <p>O racismo não é apenas uma estrutura social. Ele é também uma inscrição psíquica. Ele atravessa o corpo, molda a forma como alguém se percebe, produz ausências, silenciamentos e expectativas que vão muito além do que conseguimos nomear.</p>
+            
+            <p>Frantz Fanon já dizia: "O negro não é. Ele torna-se." Torna-se pela violência que o mundo projeta sobre ele. Torna-se pela imagem que lhe é devolvida. Torna-se pelo não lugar onde sua subjetividade é empurrada.</p>
+            
+            <h3>O racismo como experiência psíquica</h3>
+            <p>O racismo opera no imaginário, no simbólico e no real. Ele não depende de intenção individual — ele se repete como estrutura, inscreve-se nos corpos e reaparece nos sonhos, nas escolhas afetivas, nos sintomas, nas culpas, nos silêncios, nas formas de amar e nas formas de sofrer.</p>
+            
+            <p>No inconsciente, o racismo funciona como uma ferida aberta: algo que não cicatriza e que retorna sob diferentes formas. Ele aparece na dificuldade de sentir-se digno, na sensação de estar sempre exposto, na culpa que não corresponde ao fato real, na vergonha do próprio corpo, na impossibilidade de desejar plenamente.</p>
+            
+            <h3>Fanon e o corpo que carrega o mundo</h3>
+            <p>Fanon nos ajuda a ver que o sofrimento racial não está apenas na mente: está no corpo. Um corpo que aprende a contrair-se para não chamar atenção. Que aprende a sorrir para não ser visto como ameaça. Que aprende a esquecer a própria dor para poder seguir vivo.</p>
+            
+            <h3>A psicanálise como espaço de restituição</h3>
+            <p>A psicanálise, quando se deixa atravessar por Fanon, Kilomba, Nelsa Santos, deixa de ser neutra. Ela se torna campo de cuidado radical. O trabalho analítico pode oferecer um espaço para existir sem o olhar racializado, um campo para nomear o indizível, um lugar para restaurar o desejo, e a chance de diferenciar sofrimento pessoal de violência estrutural.</p>
+            
+            <p><strong>Racismo e subjetividade não são temas externos à clínica. Eles são a clínica. Eles atravessam a dor, a fantasia, o sonho, a culpa, o sintoma.</strong></p>
+        </div>
+    </div>
 
-  <script>
-    // small script to fix dynamic year in footer
-    (function(){
-      try{document.querySelector('footer .wrap div div:last-child').innerText = '© ' + new Date().getFullYear() + ' — Todos os direitos reservados'}catch(e){/*silent*/}
-    })();
-  </script>
-</body>
-</html>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">×</span>
+            <h2>Masculinidades possíveis</h2>
+            <p><em>Quando o homem aprende a respirar</em></p>
+            
+            <p>Falar sobre masculinidade, hoje, é falar de respiro. De reaprender gestos simples que muitos homens nunca puderam viver: sentir, pedir ajuda, não saber, recuar, existir sem armadura.</p>
+            
+            <p>A masculinidade hegemônica ensinou que vulnerabilidade é fraqueza, que o afeto torna o homem menor, que o silêncio é prova de força. Mas esse modelo cobra caro: produz solidão, violência, adoecimento e uma incapacidade profunda de reconhecer a própria dor.</p>
+            
+            <h3>Quando o corpo endurece para não desabar</h3>
+            <p>O homem foi treinado para não tremer. Para não expor dúvidas. Para manter o rosto firme mesmo quando tudo dentro rui. Mas o corpo não mente. Ele sinaliza o peso de uma masculinidade que sufoca: na tensão crônica, no cansaço sem nome, na irritação que explode, na dificuldade de intimidade.</p>
+            
+            <h3>O encontro com a vulnerabilidade</h3>
+            <p>A psicanálise ajuda a compreender que não existe potência sem fragilidade. Não existe autonomia sem dependência. Ser vulnerável não significa perder virilidade; significa abandonar uma virilidade imaginária que só existe quando o homem nega partes fundamentais de si.</p>
+            
+            <h3>O afeto como força que sustenta</h3>
+            <p>Fanon e Winnicott me ensinaram que o afeto é político. É criação. É uma das formas mais profundas de restituição de humanidade. Homens não são ensinados a cultivar vínculos — são ensinados a performar controle. Mas quando o afeto entra em cena, algo muda.</p>
+            
+            <h3>Reconstruir-se: o homem que aprende a respirar</h3>
+            <p>Reconstruir a masculinidade não é destruir o que existe, mas retirar o peso que nunca deveria ter sido colocado. É aprender a respirar sem se sentir fraco. É compreender que força não é invulnerabilidade — é flexibilidade emocional.</p>
+            
+            <p><strong>Uma masculinidade possível é aquela que não sufoca. Que não nega. Que não endurece tudo. É aquela que respira. E é nesse respiro que, muitas vezes, começa a transformação.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">×</span>
+            <h2>Entre políticas públicas e inconsciente</h2>
+            <p><em>Notas de um psicólogo no SUAS</em></p>
+            
+            <p>Trabalhar no SUAS é aprender, todos os dias, que o sofrimento não começa nem termina no consultório. Ele nasce no território, circula entre casas, escolas, instituições, serviços que falham, redes que se rompem. Ele carrega a marca do desemprego, da fome, da violência, do racismo, das ausências do Estado.</p>
+            
+            <h3>O inconsciente também mora na periferia</h3>
+            <p>Há quem pense que o inconsciente é neutro, universal, desligado da vida concreta. Mas basta ouvir as histórias que atravessam o CRAS, CREAS, para perceber: o inconsciente é também social. Ele é estruturado, atravessado e ferido pelas desigualdades.</p>
+            
+            <h3>A clínica no território</h3>
+            <p>A clínica no SUAS não é uma adaptação da clínica tradicional. Ela é outra coisa. É um modo de estar ao lado. De sustentar sem invadir. De reconhecer a potência sem negar a dor. Winnicott chamaria de holding. Fanon chamaria de dignidade. Kilomba chamaria de descolonização da escuta.</p>
+            
+            <h3>Entre norma e desejo</h3>
+            <p>O SUAS demanda relatórios, fluxos, encaminhamentos, protocolos. Mas o que realmente move o cuidado é aquilo que não cabe no papel: o gesto de confiança de quem nunca confiou em ninguém, a primeira frase dita sem medo, o olhar que admite cansaço, a respiração que finalmente se solta.</p>
+            
+            <h3>Escutar desigualdades é escutar subjetividades</h3>
+            <p>Fanon nos lembra: "o que o mundo faz de mim é parte do que eu sou". No SUAS, isso se torna evidente. O sofrimento psíquico está enredado com políticas públicas, racismo estrutural, desigualdade urbana, violências históricas. Por isso, a escuta clínica no território não pode ser despolitizada.</p>
+            
+            <p><strong>A clínica no SUAS é uma clínica que pulsa. Que se contamina de realidade. Que se transforma a cada encontro. É a clínica onde subjetividade e desigualdade se encontram, onde o inconsciente aparece com outras cores, outras dores, outros caminhos.</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Menu Mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Toggle FAQ
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            const allButtons = document.querySelectorAll('.faq-question span');
+            
+            allAnswers.forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            allButtons.forEach(span => {
+                if (span !== button.querySelector('span')) {
+                    span.textContent = '+';
+                }
+            });
+            
+            answer.classList.toggle('active');
+            const span = button.querySelector('span');
+            span.textContent = answer.classList.contains('active') ? '−' : '+';
+        }
+
+        // Modal Functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        document.getElementById('navLinks').classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Prevent blog post links from navigating
+        document.querySelectorAll('.blog-post .ler-mais').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+        });
+    </script>
+            
+            
+            
+        
+
+        </body></html>
+
+
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luis Oliveira - Psicólogo clínico e social. Escuta profunda em psicanálise, racialidade e masculinidades. Atendimento online. Agende sua sessão.">
+    <meta name="keywords" content="psicólogo Campinas, psicanálise, terapia online, racialidade, masculinidades, SUAS, atendimento psicossocial">
+    <title>Luis Oliveira - Psicólogo | Psicanálise | Campinas-SP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Dancing+Script:wght@400;600&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-primaria: #A68A64;
+            --cor-secundaria: #5F7A6C;
+            --cor-acento: #D4AF37;
+            --cor-neutra: #FDFBF7;
+            --cor-texto: #3D3D3D;
+            --cor-texto-claro: #6B6B6B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-neutra);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Crimson Text', serif;
+            font-weight: 600;
+        }
+
+        .poetico {
+            font-family: 'Dancing Script', cursive;
+            color: var(--cor-primaria);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #A68A64 0%, #7A9A88 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Crimson Text', serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--cor-acento);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(166,138,100,0.92) 0%, rgba(95,122,108,0.92) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23A68A64" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitulo {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero .poetico-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #f5f1e8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--cor-acento);
+            color: var(--cor-texto);
+        }
+
+        .btn-primary:hover {
+            background: #C19F2F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--cor-primaria);
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--cor-primaria);
+        }
+
+        /* Quem Sou */
+        .quem-sou {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .foto-perfil {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .bio h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--cor-secundaria);
+        }
+
+        .bio p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--cor-texto-claro);
+        }
+
+        .bio ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .bio li::before {
+            content: "→";
+            color: var(--cor-acento);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Para Quem */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--cor-primaria);
+        }
+
+        .card p {
+            color: var(--cor-texto-claro);
+            font-size: 1rem;
+        }
+
+        /* Como Trabalho */
+        .trabalho-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .trabalho-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .trabalho-item h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--cor-secundaria);
+        }
+
+        .trabalho-item p {
+            color: var(--cor-texto-claro);
+            line-height: 1.8;
+        }
+
+        /* Formação */
+        .formacao-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .formacao-section {
+            margin-bottom: 3rem;
+        }
+
+        .formacao-section h3 {
+            font-size: 1.8rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--cor-acento);
+            padding-bottom: 0.5rem;
+        }
+
+        .formacao-section ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .formacao-section li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--cor-texto-claro);
+        }
+
+        .formacao-section li::before {
+            content: "•";
+            color: var(--cor-acento);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Serviços */
+        .servico-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .servico-box h3 {
+            font-size: 2rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .servico-box h4 {
+            font-size: 1.3rem;
+            color: var(--cor-secundaria);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .servico-box ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .servico-box li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .servico-box li::before {
+            content: "✓";
+            color: var(--cor-acento);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Blog */
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-post-content {
+            padding: 2rem;
+        }
+
+        .blog-post h3 {
+            font-size: 1.6rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .blog-post p {
+            color: var(--cor-texto-claro);
+            margin-bottom: 1rem;
+        }
+
+        .ler-mais {
+            color: var(--cor-acento);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            color: var(--cor-texto-claro);
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 1.5rem;
+        }
+
+        /* Contato */
+        .contato-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contato-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contato-item {
+            margin-bottom: 2rem;
+        }
+
+        .contato-item h3 {
+            font-size: 1.3rem;
+            color: var(--cor-primaria);
+            margin-bottom: 0.5rem;
+        }
+
+        .contato-item p, .contato-item a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+        }
+
+        .contato-item a:hover {
+            color: var(--cor-acento);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--cor-primaria);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--cor-secundaria);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--cor-secundaria);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+
+        /* WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.5);
+            z-index: 999;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding-top: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .poetico-text {
+                font-size: 1.1rem;
+            }
+
+            .quem-sou {
+                grid-template-columns: 1fr;
+            }
+
+            .contato-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+        }
+
+        /* Modal do Blog */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            background-color: var(--cor-neutra);
+            margin: 5% auto;
+            padding: 3rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            color: var(--cor-texto-claro);
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: var(--cor-primaria);
+        }
+
+        .modal-content h2 {
+            color: var(--cor-primaria);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .modal-content h3 {
+            color: var(--cor-secundaria);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .modal-content p {
+            color: var(--cor-texto-claro);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .modal-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .modal-content li {
+            margin-bottom: 0.8rem;
+            color: var(--cor-texto-claro);
+        }
+    </style>
+</head><body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Luis Oliveira</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#processo">Processo</a></li>
+                <li><a href="#blog">Reflexões</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Escuta profunda para histórias que pedem tempo</h1>
+            <p class="subtitulo">Psicólogo Clínico e Social | Atendimento Online</p>
+            <p class="poetico-text">
+                Às vezes o que nos dói não encontra palavra.<br>
+                Às vezes o que nos move é um gesto, um silêncio, um quase-dito.<br>
+                É nesse espaço entre a fala e o corpo que eu trabalho.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Agende sua primeira sessão</a>
+                <a href="#sobre" class="btn btn-secondary">Saiba mais sobre mim</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Sou -->
+    <section id="sobre">
+        <h2 class="section-title">Quem Sou</h2>
+        <div class="quem-sou">
+            <div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500' viewBox='0 0 400 500'%3E%3Crect fill='%238B6F47' width='400' height='500'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='white' text-anchor='middle' dy='.3em'%3ESua Foto Profissional%3C/text%3E%3C/svg%3E" alt="Luis Oliveira - Psicólogo" class="foto-perfil">
+            </div>
+            <div class="bio">
+                <h3>Luis Oliveira</h3>
+                <p><strong>Psicólogo Clínico e Social | CRP 06/159433</strong></p>
+                <p>Formado em Psicologia pela Universidade São Francisco.</p>
+                
+                <p>Minha clínica é uma travessia entre:</p>
+                <ul>
+                    <li>Psicanálise e experiência social</li>
+                    <li>Racialidade, corpo e território</li>
+                    <li>Sonhos, imagens e afetos</li>
+                </ul>
+                
+                <p>Trabalho no SUAS, acompanhando famílias, grupos e pessoas atravessadas por violências, desigualdades e buscas por outros modos de existir.</p>
+                
+                <p><em>Cada pessoa traz consigo um mundo inteiro e esse mundo merece ser recebido com cuidado, sem pressa.</em></p>
+                
+                <a href="#contato" class="btn btn-primary" style="margin-top: 2rem;">Quero conversar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quem -->
+    <section style="background: white;">
+        <h2 class="section-title">Para Quem é Este Trabalho</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+            Minha escuta acolhe quem vive:
+        </p>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Angústias Silenciosas</h3>
+                <p>Aquilo que pesa, mas não encontra nome. O que incomoda, mas parece sem explicação.</p>
+            </div>
+            <div class="card">
+                <h3>Efeitos do Racismo</h3>
+                <p>A exaustão diária de existir em um corpo racializado. As feridas que o mundo deixa na alma.</p>
+            </div>
+            <div class="card">
+                <h3>Pessoas que Precisam Respirar</h3>
+                <p>Pessoas cansadas de sustentar armaduras. Que querem afeto sem violência, vulnerabilidade sem vergonha.</p>
+            </div>
+            <div class="card">
+                <h3>Crises de Identidade e Transições</h3>
+                <p>Quando a vida pede mudança, mas o medo paralisa. Quando não sabemos mais quem somos.</p>
+            </div>
+            <div class="card">
+                <h3>Conflitos Familiares e Vínculos Frágeis</h3>
+                <p>Histórias que se repetem, laços que machucam, heranças que pesam.</p>
+            </div>
+            <div class="card">
+                <h3>Esgotamento e Sobrecarga</h3>
+                <p>Trabalho que adoece, cuidado que sufoca, responsabilidades que não param.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Quero agendar uma sessão</a>
+        </div>
+    </section>
+
+    <!-- Como Trabalho -->
+    <section>
+        <h2 class="section-title">Como Trabalho</h2>
+        <div class="trabalho-items">
+            <div class="trabalho-item">
+                <h3>Psicanálise Viva</h3>
+                <p>Não um manual de técnicas, mas uma escuta que acompanha seu ritmo, como quem acompanha um rio: às vezes lento, às vezes turbulento, às vezes subterrâneo.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Corpo, Território, Sociedade</h3>
+                <p>Seu sofrimento não é só seu. Ele conversa com suas ruas, seus afetos, sua cor, sua história. Aqui não separamos o íntimo do coletivo.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Imagens, Sonhos, Gestos</h3>
+                <p>O inconsciente respira em imagens. Trabalhamos com o que aparece em sonhos, sensações, memórias teimosas.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Ritmo Respeitoso</h3>
+                <p>Não há pressa. Cada palavra tem espaço para ressoar. Cada encontro é único.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação -->
+    <section style="background: white;">
+        <h2 class="section-title">Formação e Experiência</h2>
+        <div class="formacao-content">
+            <div class="formacao-section">
+                <h3>Formação Acadêmica</h3>
+                <ul>
+                    <li>Psicólogo pela Universidade São Francisco</li>
+                    <li>Especialização em Psicanálise Clínica</li>
+                    <li>CRP: 06/159433</li>
+                </ul>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Experiência Profissional</h3>
+                <ul>
+                    <li>Psicólogo no Sistema Único de Assistência Social (SUAS)</li>
+                    <li>Atuação com famílias em vulnerabilidade social e violência doméstica</li>
+                    <li>Trabalho com pessoas com deficiência visual, com surdo-cegueira e múltiplas deficiências</li>
+                    <li>Atendimento clínico individual e grupal desde 2018</li>
+                    <li>Mediação com redes de proteção (escolas, saúde, conselhos tutelares)</li>
+                    <li>Grupos reflexivos sobre masculinidades, cuidadores de pessoas com deficiência, adolescências, violência doméstica contra mulheres e racialidade</li>
+                </ul>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Referências Teóricas</h3>
+                <p>Psicanálise Freudiana, Frantz Fanon, Grada Kilomba e Nelsa Santos.</p>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Parcerias Institucionais</h3>
+                <ul>
+                    <li><a href="https://www.setacampinas.org.br/" target="_blank" style="color: var(--cor-acento);">Serviço Especializado de Proteção Social à Família (SESF)</a></li>
+                    <li><a href="https://www.caiscampinas.org.br/" target="_blank" style="color: var(--cor-acento);">Centro de Apoio e Integração do Surdocego e Múltiplo Deficiente (CAIS)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2 class="section-title">Serviços</h2>
+        
+        <div class="servico-box">
+            <h3>Atendimento Individual Online</h3>
+            <p><em>Para adolescentes e adultos</em></p>
+            <p>Espaço seguro para sustentar perguntas e encontrar caminhos.</p>
+            
+            <h4>Posso ajudar com:</h4>
+            <ul>
+                <li>Orientação e organização de cuidado familiar</li>
+                <li>Mediação com escolas, unidades de saúde, CRAS/CREAS</li>
+                <li>Compreensão de direitos e acesso a serviços</li>
+                <li>Acompanhamento de casos complexos</li>
+                <li>Situações de violência doméstica e violação de direitos</li>
+            </ul>
+            
+            <p style="margin-top: 1.5rem;"><strong>Atendimento:</strong> Online</p>
+            <p><strong>Valores:</strong> Consultar (possibilidade de valores sociais)</p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Solicitar informações</a>
+        </div>
+
+        <div class="servico-box">
+            <h3>Grupos Terapêuticos e Rodas de Conversa</h3>
+            
+            <h4>Grupo: Masculinidades Possíveis</h4>
+            <p>Um lugar para homens que querem se encontrar consigo mesmos sem violência, sem armadura, sem medo do afeto.</p>
+            <ul>
+                <li>Formato: encontros quinzenais/mensais</li>
+                <li>Duração: 1h30</li>
+                <li>Vagas: limitadas</li>
+            </ul>
+            
+            <h4>Grupo: Mulheres em Conversa</h4>
+            <p>Espaço de acolhimento, palavra, vínculo e cuidado entre mulheres.</p>
+            
+            <h4>Grupo: Caminhos para a Adolescência</h4>
+            <p>Onde o inconsciente fala em cenas, símbolos e movimentos que transformam a vida de dentro para fora.</p>
+            
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Quero participar de um grupo</a>
+        </div>
+    </section>
+
+    <!-- Processo Terapêutico -->
+    <section id="processo" style="background: white;">
+        <h2 class="section-title">Como é o Processo Terapêutico</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 1.3rem; text-align: center; margin-bottom: 3rem; color: var(--cor-primaria); font-style: italic;">
+                A terapia comigo não é um procedimento. É um encontro.
+            </p>
+            
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+                E encontros têm tempo, gestos, hesitações e descobertas.<br>
+                Há quem chegue falando muito. Há quem chegue falando pouco.<br>
+                Há quem chegue com raiva, com medo, com pressa, com sonhos estranhos, com uma dor que não cabe no peito.<br><br>
+                <strong>Eu recebo cada pessoa no ritmo em que ela puder existir.</strong>
+            </p>
+
+            <div class="servico-box">
+                <h3>O que esperar das sessões</h3>
+                
+                <h4>Primeiro Encontro</h4>
+                <ul>
+                    <li>Conversamos sobre seu momento atual</li>
+                    <li>Você conta o que te trouxe até aqui</li>
+                    <li>Avaliamos juntos se faz sentido continuarmos</li>
+                    <li>Esclareço dúvidas sobre o processo</li>
+                </ul>
+                
+                <h4>Frequência e Duração</h4>
+                <ul>
+                    <li>Sessões de 50 minutos</li>
+                    <li>Frequência combinada de acordo com sua necessidade (geralmente semanal)</li>
+                    <li>Processo sem prazo determinado, cada pessoa tem seu tempo</li>
+                </ul>
+                
+                <h4>O ritmo da escuta</h4>
+                <p>O mundo acelera; a clínica desacelera. Aqui, cada palavra tem espaço para ressoar. Trabalhamos no seu tempo, não na pressa do mundo.</p>
+            </div>
+
+            <div class="servico-box">
+                <h3>Com o que Trabalhamos</h3>
+                
+                <h4>História e Território</h4>
+                <p>Sua dor conversa com suas ruas, seus afetos, seus silêncios, sua cor, seu bairro, seus vínculos.</p>
+                
+                <h4>O Entre-Lugar: Subjetivo e Social</h4>
+                <p>Onde o íntimo e o político se encontram. Olhamos para o inconsciente sem perder de vista o mundo.</p>
+                
+                <h4>Imagens, Sonhos, Corpo</h4>
+                <p>O inconsciente respira em imagens, às vezes uma cena onírica, às vezes um gesto repetido, às vezes uma sensação no peito.</p>
+                
+                <h4>Vínculos e Famílias</h4>
+                <p>As histórias familiares são rios profundos. Às vezes precisamos voltar neles para entender por que nossas escolhas sempre tocam a mesma pedra.</p>
+                
+                <h4>Racialidade, Masculinidade, Corpo</h4>
+                <p>Aqui há espaço para falar do que machuca e do que sustenta:</p>
+                <ul>
+                    <li>A dor cansada do racismo</li>
+                    <li>A dificuldade de ser mulher/homem sem violência</li>
+                    <li>O corpo que endurece para sobreviver</li>
+                    <li>Os afetos que nunca tiveram lugar</li>
+                    <li>A tentativa de criar outra forma de existir</li>
+                </ul>
+            </div>
+
+            <div class="servico-box">
+                <h3>Sigilo e Ética</h3>
+                <p>Todo o processo é regido pelo sigilo profissional e pelo Código de Ética da Psicologia. Seu espaço é seguro, protegido e respeitoso.</p>
+                <p style="font-style: italic; margin-top: 2rem; font-size: 1.1rem; color: var(--cor-primaria);">
+                    A terapia comigo é uma travessia.<br>
+                    E toda travessia começa quando alguém se permite dar o primeiro passo.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Estou pronto para começar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2 class="section-title">Reflexões</h2>
+        <div class="blog-posts">
+            <div class="blog-post" onclick="openModal('modal1')">
+                <div class="blog-post-content">
+                    <h3>O que é uma escuta profunda?</h3>
+                    <p>Um ensaio sobre ritmo, silêncio e clínica viva. Como a escuta se torna gesto ético, político e transformador.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal2')">
+                <div class="blog-post-content">
+                    <h3>Racismo e subjetividade</h3>
+                    <p>Como o racismo habita o inconsciente e o que a psicanálise pode oferecer. Ecos de Fanon na clínica contemporânea.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal3')">
+                <div class="blog-post-content">
+                    <h3>Masculinidades possíveis</h3>
+                    <p>Quando o homem aprende a respirar. Reflexões sobre vulnerabilidade, afeto e reconstrução de si.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal4')">
+                <div class="blog-post-content">
+                    <h3>Entre políticas públicas e inconsciente</h3>
+                    <p>Notas de um psicólogo no SUAS. A clínica no território, onde subjetividade e desigualdade se encontram.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: white;">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como sei se preciso de terapia?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Se você sente que algo não vai bem, se há incômodos repetidos, se as mesmas situações se repetem, se você quer se entender melhor ou atravessar um momento difícil, a terapia pode ajudar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Quanto tempo dura um processo terapêutico?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cada pessoa tem seu tempo. Não há prazo determinado. Alguns processos são mais breves, outros pedem mais tempo de escuta e elaboração.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Qual a diferença entre psicólogo e psiquiatra?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>O psicólogo trabalha através da escuta, da palavra e das imagens. O psiquiatra é médico e pode prescrever medicamentos. Muitas vezes o trabalho é complementar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como funcionam as sessões online?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>As sessões online têm a mesma duração e seriedade das presenciais. Usamos plataformas seguras (Google Meet, Zoom) e o sigilo é totalmente preservado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Você atende pelo convênio?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim, atendo pelo <a href="https://smartcardsaude.com.br/" target="_blank" style="color: var(--cor-acento);">SmartCard Saúde</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Posso fazer terapia mesmo sem uma "crise"?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim. A terapia não é só para momentos de crise. É também para quem quer se conhecer melhor, crescer, elaborar histórias antigas ou simplesmente ter um espaço de escuta.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Você atende crianças e adolescentes?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Atendo apenas adolescentes a partir de 12 anos e adultos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como funciona o sigilo profissional?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Tudo o que você disser nas sessões é sigiloso. Não compartilho informações com ninguém, exceto em situações previstas pelo Código de Ética (risco à vida, por exemplo).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2 class="section-title">Vamos Conversar</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+            Se você sente que há algo pedindo para ser dito, ouvido ou transformado, talvez seja hora de começarmos.
+        </p>
+
+        <div class="contato-grid">
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h3>WhatsApp</h3>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">(19) 98369-0238</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>E-mail</h3>
+                    <a href="mailto:luis_felipecps@hotmail.com">luis_felipecps@hotmail.com</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Formulário de Agendamento</h3>
+                    <a href="https://forms.gle/UQVAi7M12VT4iryv5" target="_blank">Preencher formulário</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Horários Disponíveis</h3>
+                    <p>Segunda a Sexta</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/psicologo.luisoliveira/" target="_blank">Instagram</a>
+                        <a href="http://www.tiktok.com/@psi.luisoliveira" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h3>Informações Profissionais</h3>
+                    <p><strong>Luis Oliveira</strong><br>
+                    Psicólogo Clínico e Social<br>
+                    CRP: 06/159433<br>
+                    Formação: Universidade São Francisco<br>
+                    Referencial teórico: Psicanálise</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Consultório</h3>
+                    <p>R. Alfredo Pereira de Castro, 71<br>
+                    Jardim Uruguai, Campinas - SP<br>
+                    CEP: 13059-861</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Valores e Pagamento</h3>
+                    <p><strong>Sessão Individual:</strong> A combinar<br>
+                    <strong>Formas de pagamento:</strong> PIX ou transferência<br>
+                    <strong>Convênio:</strong> <a href="https://smartcardsaude.com.br/" target="_blank" style="color: var(--cor-acento);">SmartCard Saúde</a></p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Política de Cancelamento</h3>
+                    <p>Cancelamentos ou remarcações devem ser feitos com 24h de antecedência.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 15px;">
+            <p style="color: var(--cor-texto-claro); margin-bottom: 1rem;">
+                <strong>Sigilo e Segurança:</strong> Todos os atendimentos seguem rigorosamente o Código de Ética do Psicólogo e as normas do Conselho Federal de Psicologia. Suas informações são sigilosas e protegidas.
+            </p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Agendar primeira sessão</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Luis Oliveira - Psicólogo CRP 06/159433</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Todos os direitos reservados | Sigilo profissional garantido</p>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+        💬
+    </a>
+
+    <!-- Modais do Blog -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">×</span>
+            <h2>O que é uma escuta profunda?</h2>
+            <p><em>Um ensaio sobre ritmo, silêncio e clínica viva</em></p>
+            
+            <p>A escuta profunda é o coração do meu trabalho clínico. Ela não nasce apenas do ouvido — nasce do corpo inteiro, da história que cada pessoa carrega, das violências que a atravessaram e das potências que ainda podem ser descobertas.</p>
+            
+            <p>Como psicólogo social e clínico, formado pelas experiências do território, pela psicanálise que diálogo com Winnicott, Freud, Fanon, Grada Kilomba e Nelsa Neves Santos, pela música que me constituiu e pelo cotidiano do SUAS, aprendi que escutar profundamente é um gesto ético. Um modo de estar. Um posicionamento diante da vida.</p>
+            
+            <h3>Ritmo: um tempo que acolhe</h3>
+            <p>Minha clínica tem um ritmo mais pausado — não por estilo, mas por escolha. Cada pessoa tem seu compasso interno, e grande parte do sofrimento começa quando somos obrigados a viver no ritmo dos outros. No consultório e na assistência social, desacelerar é um ato político: é afirmar que existe espaço para respirar, narrar e existir sem pressa.</p>
+            
+            <h3>Silêncio: onde o indizível encontra lugar</h3>
+            <p>O silêncio não é ausência. Ele tem densidade, textura, um corpo próprio. É nele que o trauma se anuncia, que a dissociação fala, que a palavra encontra coragem para nascer. Mas também aprendi — com Fanon e Kilomba — que há silêncios que foram impostos: silêncios da colonialidade, do racismo, da vergonha transmitida entre gerações.</p>
+            
+            <h3>Clínica viva: presença que sustenta</h3>
+            <p>A clínica viva é uma clínica que não se repete de forma mecânica. Ela não é um ritual automático. Ela é encontro — e encontro implica risco, criação, responsabilidade e presença. Escutar profundamente é deixar-se tocar sem perder o contorno.</p>
+            
+            <p><strong>Em essência, a escuta profunda é um ritmo que respeita a singularidade, um silêncio que sustenta, uma presença viva, uma ética que atravessa o fazer clínico, um gesto político e afetivo.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">×</span>
+            <h2>Racismo e subjetividade</h2>
+            <p><em>Como o racismo habita o inconsciente e o que a psicanálise pode oferecer</em></p>
+            
+            <p>O racismo não é apenas uma estrutura social. Ele é também uma inscrição psíquica. Ele atravessa o corpo, molda a forma como alguém se percebe, produz ausências, silenciamentos e expectativas que vão muito além do que conseguimos nomear.</p>
+            
+            <p>Frantz Fanon já dizia: "O negro não é. Ele torna-se." Torna-se pela violência que o mundo projeta sobre ele. Torna-se pela imagem que lhe é devolvida. Torna-se pelo não lugar onde sua subjetividade é empurrada.</p>
+            
+            <h3>O racismo como experiência psíquica</h3>
+            <p>O racismo opera no imaginário, no simbólico e no real. Ele não depende de intenção individual — ele se repete como estrutura, inscreve-se nos corpos e reaparece nos sonhos, nas escolhas afetivas, nos sintomas, nas culpas, nos silêncios, nas formas de amar e nas formas de sofrer.</p>
+            
+            <p>No inconsciente, o racismo funciona como uma ferida aberta: algo que não cicatriza e que retorna sob diferentes formas. Ele aparece na dificuldade de sentir-se digno, na sensação de estar sempre exposto, na culpa que não corresponde ao fato real, na vergonha do próprio corpo, na impossibilidade de desejar plenamente.</p>
+            
+            <h3>Fanon e o corpo que carrega o mundo</h3>
+            <p>Fanon nos ajuda a ver que o sofrimento racial não está apenas na mente: está no corpo. Um corpo que aprende a contrair-se para não chamar atenção. Que aprende a sorrir para não ser visto como ameaça. Que aprende a esquecer a própria dor para poder seguir vivo.</p>
+            
+            <h3>A psicanálise como espaço de restituição</h3>
+            <p>A psicanálise, quando se deixa atravessar por Fanon, Kilomba, Nelsa Santos, deixa de ser neutra. Ela se torna campo de cuidado radical. O trabalho analítico pode oferecer um espaço para existir sem o olhar racializado, um campo para nomear o indizível, um lugar para restaurar o desejo, e a chance de diferenciar sofrimento pessoal de violência estrutural.</p>
+            
+            <p><strong>Racismo e subjetividade não são temas externos à clínica. Eles são a clínica. Eles atravessam a dor, a fantasia, o sonho, a culpa, o sintoma.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">×</span>
+            <h2>Masculinidades possíveis</h2>
+            <p><em>Quando o homem aprende a respirar</em></p>
+            
+            <p>Falar sobre masculinidade, hoje, é falar de respiro. De reaprender gestos simples que muitos homens nunca puderam viver: sentir, pedir ajuda, não saber, recuar, existir sem armadura.</p>
+            
+            <p>A masculinidade hegemônica ensinou que vulnerabilidade é fraqueza, que o afeto torna o homem menor, que o silêncio é prova de força. Mas esse modelo cobra caro: produz solidão, violência, adoecimento e uma incapacidade profunda de reconhecer a própria dor.</p>
+            
+            <h3>Quando o corpo endurece para não desabar</h3>
+            <p>O homem foi treinado para não tremer. Para não expor dúvidas. Para manter o rosto firme mesmo quando tudo dentro rui. Mas o corpo não mente. Ele sinaliza o peso de uma masculinidade que sufoca: na tensão crônica, no cansaço sem nome, na irritação que explode, na dificuldade de intimidade.</p>
+            
+            <h3>O encontro com a vulnerabilidade</h3>
+            <p>A psicanálise ajuda a compreender que não existe potência sem fragilidade. Não existe autonomia sem dependência. Ser vulnerável não significa perder virilidade; significa abandonar uma virilidade imaginária que só existe quando o homem nega partes fundamentais de si.</p>
+            
+            <h3>O afeto como força que sustenta</h3>
+            <p>Fanon e Winnicott me ensinaram que o afeto é político. É criação. É uma das formas mais profundas de restituição de humanidade. Homens não são ensinados a cultivar vínculos — são ensinados a performar controle. Mas quando o afeto entra em cena, algo muda.</p>
+            
+            <h3>Reconstruir-se: o homem que aprende a respirar</h3>
+            <p>Reconstruir a masculinidade não é destruir o que existe, mas retirar o peso que nunca deveria ter sido colocado. É aprender a respirar sem se sentir fraco. É compreender que força não é invulnerabilidade — é flexibilidade emocional.</p>
+            
+            <p><strong>Uma masculinidade possível é aquela que não sufoca. Que não nega. Que não endurece tudo. É aquela que respira. E é nesse respiro que, muitas vezes, começa a transformação.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">×</span>
+            <h2>Entre políticas públicas e inconsciente</h2>
+            <p><em>Notas de um psicólogo no SUAS</em></p>
+            
+            <p>Trabalhar no SUAS é aprender, todos os dias, que o sofrimento não começa nem termina no consultório. Ele nasce no território, circula entre casas, escolas, instituições, serviços que falham, redes que se rompem. Ele carrega a marca do desemprego, da fome, da violência, do racismo, das ausências do Estado.</p>
+            
+            <h3>O inconsciente também mora na periferia</h3>
+            <p>Há quem pense que o inconsciente é neutro, universal, desligado da vida concreta. Mas basta ouvir as histórias que atravessam o CRAS, CREAS, para perceber: o inconsciente é também social. Ele é estruturado, atravessado e ferido pelas desigualdades.</p>
+            
+            <h3>A clínica no território</h3>
+            <p>A clínica no SUAS não é uma adaptação da clínica tradicional. Ela é outra coisa. É um modo de estar ao lado. De sustentar sem invadir. De reconhecer a potência sem negar a dor. Winnicott chamaria de holding. Fanon chamaria de dignidade. Kilomba chamaria de descolonização da escuta.</p>
+            
+            <h3>Entre norma e desejo</h3>
+            <p>O SUAS demanda relatórios, fluxos, encaminhamentos, protocolos. Mas o que realmente move o cuidado é aquilo que não cabe no papel: o gesto de confiança de quem nunca confiou em ninguém, a primeira frase dita sem medo, o olhar que admite cansaço, a respiração que finalmente se solta.</p>
+            
+            <h3>Escutar desigualdades é escutar subjetividades</h3>
+            <p>Fanon nos lembra: "o que o mundo faz de mim é parte do que eu sou". No SUAS, isso se torna evidente. O sofrimento psíquico está enredado com políticas públicas, racismo estrutural, desigualdade urbana, violências históricas. Por isso, a escuta clínica no território não pode ser despolitizada.</p>
+            
+            <p><strong>A clínica no SUAS é uma clínica que pulsa. Que se contamina de realidade. Que se transforma a cada encontro. É a clínica onde subjetividade e desigualdade se encontram, onde o inconsciente aparece com outras cores, outras dores, outros caminhos.</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Menu Mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Toggle FAQ
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            const allButtons = document.querySelectorAll('.faq-question span');
+            
+            allAnswers.forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            allButtons.forEach(span => {
+                if (span !== button.querySelector('span')) {
+                    span.textContent = '+';
+                }
+            });
+            
+            answer.classList.toggle('active');
+            const span = button.querySelector('span');
+            span.textContent = answer.classList.contains('active') ? '−' : '+';
+        }
+
+        // Modal Functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        document.getElementById('navLinks').classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Prevent blog post links from navigating
+        document.querySelectorAll('.blog-post .ler-mais').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+        });
+    </script>
+            
+            
+            
+        
+
+        </body><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luis Oliveira - Psicólogo clínico e social. Escuta profunda em psicanálise, racialidade e masculinidades. Atendimento online. Agende sua sessão.">
+    <meta name="keywords" content="psicólogo Campinas, psicanálise, terapia online, racialidade, masculinidades, SUAS, atendimento psicossocial">
+    <title>Luis Oliveira - Psicólogo | Psicanálise | Campinas-SP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Dancing+Script:wght@400;600&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-primaria: #A68A64;
+            --cor-secundaria: #5F7A6C;
+            --cor-acento: #D4AF37;
+            --cor-neutra: #FDFBF7;
+            --cor-texto: #3D3D3D;
+            --cor-texto-claro: #6B6B6B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-neutra);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Crimson Text', serif;
+            font-weight: 600;
+        }
+
+        .poetico {
+            font-family: 'Dancing Script', cursive;
+            color: var(--cor-primaria);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #A68A64 0%, #7A9A88 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Crimson Text', serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--cor-acento);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(166,138,100,0.92) 0%, rgba(95,122,108,0.92) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23A68A64" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitulo {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero .poetico-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #f5f1e8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--cor-acento);
+            color: var(--cor-texto);
+        }
+
+        .btn-primary:hover {
+            background: #C19F2F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--cor-primaria);
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--cor-primaria);
+        }
+
+        /* Quem Sou */
+        .quem-sou {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .foto-perfil {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .bio h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--cor-secundaria);
+        }
+
+        .bio p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--cor-texto-claro);
+        }
+
+        .bio ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .bio li::before {
+            content: "→";
+            color: var(--cor-acento);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Para Quem */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--cor-primaria);
+        }
+
+        .card p {
+            color: var(--cor-texto-claro);
+            font-size: 1rem;
+        }
+
+        /* Como Trabalho */
+        .trabalho-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .trabalho-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .trabalho-item h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--cor-secundaria);
+        }
+
+        .trabalho-item p {
+            color: var(--cor-texto-claro);
+            line-height: 1.8;
+        }
+
+        /* Formação */
+        .formacao-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .formacao-section {
+            margin-bottom: 3rem;
+        }
+
+        .formacao-section h3 {
+            font-size: 1.8rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--cor-acento);
+            padding-bottom: 0.5rem;
+        }
+
+        .formacao-section ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .formacao-section li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--cor-texto-claro);
+        }
+
+        .formacao-section li::before {
+            content: "•";
+            color: var(--cor-acento);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Serviços */
+        .servico-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .servico-box h3 {
+            font-size: 2rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .servico-box h4 {
+            font-size: 1.3rem;
+            color: var(--cor-secundaria);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .servico-box ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .servico-box li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .servico-box li::before {
+            content: "✓";
+            color: var(--cor-acento);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Blog */
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-post-content {
+            padding: 2rem;
+        }
+
+        .blog-post h3 {
+            font-size: 1.6rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .blog-post p {
+            color: var(--cor-texto-claro);
+            margin-bottom: 1rem;
+        }
+
+        .ler-mais {
+            color: var(--cor-acento);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            color: var(--cor-texto-claro);
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 1.5rem;
+        }
+
+        /* Contato */
+        .contato-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contato-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contato-item {
+            margin-bottom: 2rem;
+        }
+
+        .contato-item h3 {
+            font-size: 1.3rem;
+            color: var(--cor-primaria);
+            margin-bottom: 0.5rem;
+        }
+
+        .contato-item p, .contato-item a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+        }
+
+        .contato-item a:hover {
+            color: var(--cor-acento);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--cor-primaria);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--cor-secundaria);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--cor-secundaria);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+
+        /* WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.5);
+            z-index: 999;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding-top: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .poetico-text {
+                font-size: 1.1rem;
+            }
+
+            .quem-sou {
+                grid-template-columns: 1fr;
+            }
+
+            .contato-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+        }
+
+        /* Modal do Blog */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            background-color: var(--cor-neutra);
+            margin: 5% auto;
+            padding: 3rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            color: var(--cor-texto-claro);
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: var(--cor-primaria);
+        }
+
+        .modal-content h2 {
+            color: var(--cor-primaria);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .modal-content h3 {
+            color: var(--cor-secundaria);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .modal-content p {
+            color: var(--cor-texto-claro);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .modal-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .modal-content li {
+            margin-bottom: 0.8rem;
+            color: var(--cor-texto-claro);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Luis Oliveira</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#processo">Processo</a></li>
+                <li><a href="#blog">Reflexões</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Escuta profunda para histórias que pedem tempo</h1>
+            <p class="subtitulo">Psicólogo Clínico e Social | Atendimento Online</p>
+            <p class="poetico-text">
+                Às vezes o que nos dói não encontra palavra.<br>
+                Às vezes o que nos move é um gesto, um silêncio, um quase-dito.<br>
+                É nesse espaço entre a fala e o corpo que eu trabalho.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Agende sua primeira sessão</a>
+                <a href="#sobre" class="btn btn-secondary">Saiba mais sobre mim</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Sou -->
+    <section id="sobre">
+        <h2 class="section-title">Quem Sou</h2>
+        <div class="quem-sou">
+            <div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500' viewBox='0 0 400 500'%3E%3Crect fill='%238B6F47' width='400' height='500'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='white' text-anchor='middle' dy='.3em'%3ESua Foto Profissional%3C/text%3E%3C/svg%3E" alt="Luis Oliveira - Psicólogo" class="foto-perfil">
+            </div>
+            <div class="bio">
+                <h3>Luis Oliveira</h3>
+                <p><strong>Psicólogo Clínico e Social | CRP 06/159433</strong></p>
+                <p>Formado em Psicologia pela Universidade São Francisco.</p>
+                
+                <p>Minha clínica é uma travessia entre:</p>
+                <ul>
+                    <li>Psicanálise e experiência social</li>
+                    <li>Racialidade, corpo e território</li>
+                    <li>Sonhos, imagens e afetos</li>
+                </ul>
+                
+                <p>Trabalho no SUAS, acompanhando famílias, grupos e pessoas atravessadas por violências, desigualdades e buscas por outros modos de existir.</p>
+                
+                <p><em>Cada pessoa traz consigo um mundo inteiro e esse mundo merece ser recebido com cuidado, sem pressa.</em></p>
+                
+                <a href="#contato" class="btn btn-primary" style="margin-top: 2rem;">Quero conversar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quem -->
+    <section style="background: white;">
+        <h2 class="section-title">Para Quem é Este Trabalho</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+            Minha escuta acolhe quem vive:
+        </p>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Angústias Silenciosas</h3>
+                <p>Aquilo que pesa, mas não encontra nome. O que incomoda, mas parece sem explicação.</p>
+            </div>
+            <div class="card">
+                <h3>Efeitos do Racismo</h3>
+                <p>A exaustão diária de existir em um corpo racializado. As feridas que o mundo deixa na alma.</p>
+            </div>
+            <div class="card">
+                <h3>Pessoas que Precisam Respirar</h3>
+                <p>Pessoas cansadas de sustentar armaduras. Que querem afeto sem violência, vulnerabilidade sem vergonha.</p>
+            </div>
+            <div class="card">
+                <h3>Crises de Identidade e Transições</h3>
+                <p>Quando a vida pede mudança, mas o medo paralisa. Quando não sabemos mais quem somos.</p>
+            </div>
+            <div class="card">
+                <h3>Conflitos Familiares e Vínculos Frágeis</h3>
+                <p>Histórias que se repetem, laços que machucam, heranças que pesam.</p>
+            </div>
+            <div class="card">
+                <h3>Esgotamento e Sobrecarga</h3>
+                <p>Trabalho que adoece, cuidado que sufoca, responsabilidades que não param.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Quero agendar uma sessão</a>
+        </div>
+    </section>
+
+    <!-- Como Trabalho -->
+    <section>
+        <h2 class="section-title">Como Trabalho</h2>
+        <div class="trabalho-items">
+            <div class="trabalho-item">
+                <h3>Psicanálise Viva</h3>
+                <p>Não um manual de técnicas, mas uma escuta que acompanha seu ritmo, como quem acompanha um rio: às vezes lento, às vezes turbulento, às vezes subterrâneo.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Corpo, Território, Sociedade</h3>
+                <p>Seu sofrimento não é só seu. Ele conversa com suas ruas, seus afetos, sua cor, sua história. Aqui não separamos o íntimo do coletivo.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Imagens, Sonhos, Gestos</h3>
+                <p>O inconsciente respira em imagens. Trabalhamos com o que aparece em sonhos, sensações, memórias teimosas.</p>
+            </div>
+            <div class="trabalho-item">
+                <h3>Ritmo Respeitoso</h3>
+                <p>Não há pressa. Cada palavra tem espaço para ressoar. Cada encontro é único.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação -->
+    <section style="background: white;">
+        <h2 class="section-title">Formação e Experiência</h2>
+        <div class="formacao-content">
+            <div class="formacao-section">
+                <h3>Formação Acadêmica</h3>
+                <ul>
+                    <li>Psicólogo pela Universidade São Francisco</li>
+                    <li>Especialização em Psicanálise Clínica</li>
+                    <li>CRP: 06/159433</li>
+                </ul>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Experiência Profissional</h3>
+                <ul>
+                    <li>Psicólogo no Sistema Único de Assistência Social (SUAS)</li>
+                    <li>Atuação com famílias em vulnerabilidade social e violência doméstica</li>
+                    <li>Trabalho com pessoas com deficiência visual, com surdo-cegueira e múltiplas deficiências</li>
+                    <li>Atendimento clínico individual e grupal desde 2018</li>
+                    <li>Mediação com redes de proteção (escolas, saúde, conselhos tutelares)</li>
+                    <li>Grupos reflexivos sobre masculinidades, cuidadores de pessoas com deficiência, adolescências, violência doméstica contra mulheres e racialidade</li>
+                </ul>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Referências Teóricas</h3>
+                <p>Psicanálise Freudiana, Frantz Fanon, Grada Kilomba e Nelsa Santos.</p>
+            </div>
+
+            <div class="formacao-section">
+                <h3>Parcerias Institucionais</h3>
+                <ul>
+                    <li><a href="https://www.setacampinas.org.br/" target="_blank" style="color: var(--cor-acento);">Serviço Especializado de Proteção Social à Família (SESF)</a></li>
+                    <li><a href="https://www.caiscampinas.org.br/" target="_blank" style="color: var(--cor-acento);">Centro de Apoio e Integração do Surdocego e Múltiplo Deficiente (CAIS)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <h2 class="section-title">Serviços</h2>
+        
+        <div class="servico-box">
+            <h3>Atendimento Individual Online</h3>
+            <p><em>Para adolescentes e adultos</em></p>
+            <p>Espaço seguro para sustentar perguntas e encontrar caminhos.</p>
+            
+            <h4>Posso ajudar com:</h4>
+            <ul>
+                <li>Orientação e organização de cuidado familiar</li>
+                <li>Mediação com escolas, unidades de saúde, CRAS/CREAS</li>
+                <li>Compreensão de direitos e acesso a serviços</li>
+                <li>Acompanhamento de casos complexos</li>
+                <li>Situações de violência doméstica e violação de direitos</li>
+            </ul>
+            
+            <p style="margin-top: 1.5rem;"><strong>Atendimento:</strong> Online</p>
+            <p><strong>Valores:</strong> Consultar (possibilidade de valores sociais)</p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Solicitar informações</a>
+        </div>
+
+        <div class="servico-box">
+            <h3>Grupos Terapêuticos e Rodas de Conversa</h3>
+            
+            <h4>Grupo: Masculinidades Possíveis</h4>
+            <p>Um lugar para homens que querem se encontrar consigo mesmos sem violência, sem armadura, sem medo do afeto.</p>
+            <ul>
+                <li>Formato: encontros quinzenais/mensais</li>
+                <li>Duração: 1h30</li>
+                <li>Vagas: limitadas</li>
+            </ul>
+            
+            <h4>Grupo: Mulheres em Conversa</h4>
+            <p>Espaço de acolhimento, palavra, vínculo e cuidado entre mulheres.</p>
+            
+            <h4>Grupo: Caminhos para a Adolescência</h4>
+            <p>Onde o inconsciente fala em cenas, símbolos e movimentos que transformam a vida de dentro para fora.</p>
+            
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Quero participar de um grupo</a>
+        </div>
+    </section>
+
+    <!-- Processo Terapêutico -->
+    <section id="processo" style="background: white;">
+        <h2 class="section-title">Como é o Processo Terapêutico</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p style="font-size: 1.3rem; text-align: center; margin-bottom: 3rem; color: var(--cor-primaria); font-style: italic;">
+                A terapia comigo não é um procedimento. É um encontro.
+            </p>
+            
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+                E encontros têm tempo, gestos, hesitações e descobertas.<br>
+                Há quem chegue falando muito. Há quem chegue falando pouco.<br>
+                Há quem chegue com raiva, com medo, com pressa, com sonhos estranhos, com uma dor que não cabe no peito.<br><br>
+                <strong>Eu recebo cada pessoa no ritmo em que ela puder existir.</strong>
+            </p>
+
+            <div class="servico-box">
+                <h3>O que esperar das sessões</h3>
+                
+                <h4>Primeiro Encontro</h4>
+                <ul>
+                    <li>Conversamos sobre seu momento atual</li>
+                    <li>Você conta o que te trouxe até aqui</li>
+                    <li>Avaliamos juntos se faz sentido continuarmos</li>
+                    <li>Esclareço dúvidas sobre o processo</li>
+                </ul>
+                
+                <h4>Frequência e Duração</h4>
+                <ul>
+                    <li>Sessões de 50 minutos</li>
+                    <li>Frequência combinada de acordo com sua necessidade (geralmente semanal)</li>
+                    <li>Processo sem prazo determinado, cada pessoa tem seu tempo</li>
+                </ul>
+                
+                <h4>O ritmo da escuta</h4>
+                <p>O mundo acelera; a clínica desacelera. Aqui, cada palavra tem espaço para ressoar. Trabalhamos no seu tempo, não na pressa do mundo.</p>
+            </div>
+
+            <div class="servico-box">
+                <h3>Com o que Trabalhamos</h3>
+                
+                <h4>História e Território</h4>
+                <p>Sua dor conversa com suas ruas, seus afetos, seus silêncios, sua cor, seu bairro, seus vínculos.</p>
+                
+                <h4>O Entre-Lugar: Subjetivo e Social</h4>
+                <p>Onde o íntimo e o político se encontram. Olhamos para o inconsciente sem perder de vista o mundo.</p>
+                
+                <h4>Imagens, Sonhos, Corpo</h4>
+                <p>O inconsciente respira em imagens, às vezes uma cena onírica, às vezes um gesto repetido, às vezes uma sensação no peito.</p>
+                
+                <h4>Vínculos e Famílias</h4>
+                <p>As histórias familiares são rios profundos. Às vezes precisamos voltar neles para entender por que nossas escolhas sempre tocam a mesma pedra.</p>
+                
+                <h4>Racialidade, Masculinidade, Corpo</h4>
+                <p>Aqui há espaço para falar do que machuca e do que sustenta:</p>
+                <ul>
+                    <li>A dor cansada do racismo</li>
+                    <li>A dificuldade de ser mulher/homem sem violência</li>
+                    <li>O corpo que endurece para sobreviver</li>
+                    <li>Os afetos que nunca tiveram lugar</li>
+                    <li>A tentativa de criar outra forma de existir</li>
+                </ul>
+            </div>
+
+            <div class="servico-box">
+                <h3>Sigilo e Ética</h3>
+                <p>Todo o processo é regido pelo sigilo profissional e pelo Código de Ética da Psicologia. Seu espaço é seguro, protegido e respeitoso.</p>
+                <p style="font-style: italic; margin-top: 2rem; font-size: 1.1rem; color: var(--cor-primaria);">
+                    A terapia comigo é uma travessia.<br>
+                    E toda travessia começa quando alguém se permite dar o primeiro passo.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Estou pronto para começar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2 class="section-title">Reflexões</h2>
+        <div class="blog-posts">
+            <div class="blog-post" onclick="openModal('modal1')">
+                <div class="blog-post-content">
+                    <h3>O que é uma escuta profunda?</h3>
+                    <p>Um ensaio sobre ritmo, silêncio e clínica viva. Como a escuta se torna gesto ético, político e transformador.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal2')">
+                <div class="blog-post-content">
+                    <h3>Racismo e subjetividade</h3>
+                    <p>Como o racismo habita o inconsciente e o que a psicanálise pode oferecer. Ecos de Fanon na clínica contemporânea.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal3')">
+                <div class="blog-post-content">
+                    <h3>Masculinidades possíveis</h3>
+                    <p>Quando o homem aprende a respirar. Reflexões sobre vulnerabilidade, afeto e reconstrução de si.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+            <div class="blog-post" onclick="openModal('modal4')">
+                <div class="blog-post-content">
+                    <h3>Entre políticas públicas e inconsciente</h3>
+                    <p>Notas de um psicólogo no SUAS. A clínica no território, onde subjetividade e desigualdade se encontram.</p>
+                    <a href="#" class="ler-mais">Ler mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: white;">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como sei se preciso de terapia?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Se você sente que algo não vai bem, se há incômodos repetidos, se as mesmas situações se repetem, se você quer se entender melhor ou atravessar um momento difícil, a terapia pode ajudar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Quanto tempo dura um processo terapêutico?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cada pessoa tem seu tempo. Não há prazo determinado. Alguns processos são mais breves, outros pedem mais tempo de escuta e elaboração.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Qual a diferença entre psicólogo e psiquiatra?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>O psicólogo trabalha através da escuta, da palavra e das imagens. O psiquiatra é médico e pode prescrever medicamentos. Muitas vezes o trabalho é complementar.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como funcionam as sessões online?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>As sessões online têm a mesma duração e seriedade das presenciais. Usamos plataformas seguras (Google Meet, Zoom) e o sigilo é totalmente preservado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Você atende pelo convênio?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim, atendo pelo <a href="https://smartcardsaude.com.br/" target="_blank" style="color: var(--cor-acento);">SmartCard Saúde</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Posso fazer terapia mesmo sem uma "crise"?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim. A terapia não é só para momentos de crise. É também para quem quer se conhecer melhor, crescer, elaborar histórias antigas ou simplesmente ter um espaço de escuta.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Você atende crianças e adolescentes?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Atendo apenas adolescentes a partir de 12 anos e adultos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Como funciona o sigilo profissional?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Tudo o que você disser nas sessões é sigiloso. Não compartilho informações com ninguém, exceto em situações previstas pelo Código de Ética (risco à vida, por exemplo).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2 class="section-title">Vamos Conversar</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--cor-texto-claro); font-size: 1.1rem;">
+            Se você sente que há algo pedindo para ser dito, ouvido ou transformado, talvez seja hora de começarmos.
+        </p>
+
+        <div class="contato-grid">
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h3>WhatsApp</h3>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">(19) 98369-0238</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>E-mail</h3>
+                    <a href="mailto:luis_felipecps@hotmail.com">luis_felipecps@hotmail.com</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Formulário de Agendamento</h3>
+                    <a href="https://forms.gle/UQVAi7M12VT4iryv5" target="_blank">Preencher formulário</a>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Horários Disponíveis</h3>
+                    <p>Segunda a Sexta</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/psicologo.luisoliveira/" target="_blank">Instagram</a>
+                        <a href="http://www.tiktok.com/@psi.luisoliveira" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-info">
+                <div class="contato-item">
+                    <h3>Informações Profissionais</h3>
+                    <p><strong>Luis Oliveira</strong><br>
+                    Psicólogo Clínico e Social<br>
+                    CRP: 06/159433<br>
+                    Formação: Universidade São Francisco<br>
+                    Referencial teórico: Psicanálise</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Consultório</h3>
+                    <p>R. Alfredo Pereira de Castro, 71<br>
+                    Jardim Uruguai, Campinas - SP<br>
+                    CEP: 13059-861</p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Valores e Pagamento</h3>
+                    <p><strong>Sessão Individual:</strong> A combinar<br>
+                    <strong>Formas de pagamento:</strong> PIX ou transferência<br>
+                    <strong>Convênio:</strong> <a href="https://smartcardsaude.com.br/" target="_blank" style="color: var(--cor-acento);">SmartCard Saúde</a></p>
+                </div>
+
+                <div class="contato-item">
+                    <h3>Política de Cancelamento</h3>
+                    <p>Cancelamentos ou remarcações devem ser feitos com 24h de antecedência.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 15px;">
+            <p style="color: var(--cor-texto-claro); margin-bottom: 1rem;">
+                <strong>Sigilo e Segurança:</strong> Todos os atendimentos seguem rigorosamente o Código de Ética do Psicólogo e as normas do Conselho Federal de Psicologia. Suas informações são sigilosas e protegidas.
+            </p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank">Agendar primeira sessão</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Luis Oliveira - Psicólogo CRP 06/159433</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Todos os direitos reservados | Sigilo profissional garantido</p>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://api.whatsapp.com/send/?phone=%2B5519983690238&amp;text&amp;type=phone_number&amp;app_absent=0" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+        💬
+    </a>
+
+    <!-- Modais do Blog -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">×</span>
+            <h2>O que é uma escuta profunda?</h2>
+            <p><em>Um ensaio sobre ritmo, silêncio e clínica viva</em></p>
+            
+            <p>A escuta profunda é o coração do meu trabalho clínico. Ela não nasce apenas do ouvido — nasce do corpo inteiro, da história que cada pessoa carrega, das violências que a atravessaram e das potências que ainda podem ser descobertas.</p>
+            
+            <p>Como psicólogo social e clínico, formado pelas experiências do território, pela psicanálise que diálogo com Winnicott, Freud, Fanon, Grada Kilomba e Nelsa Neves Santos, pela música que me constituiu e pelo cotidiano do SUAS, aprendi que escutar profundamente é um gesto ético. Um modo de estar. Um posicionamento diante da vida.</p>
+            
+            <h3>Ritmo: um tempo que acolhe</h3>
+            <p>Minha clínica tem um ritmo mais pausado — não por estilo, mas por escolha. Cada pessoa tem seu compasso interno, e grande parte do sofrimento começa quando somos obrigados a viver no ritmo dos outros. No consultório e na assistência social, desacelerar é um ato político: é afirmar que existe espaço para respirar, narrar e existir sem pressa.</p>
+            
+            <h3>Silêncio: onde o indizível encontra lugar</h3>
+            <p>O silêncio não é ausência. Ele tem densidade, textura, um corpo próprio. É nele que o trauma se anuncia, que a dissociação fala, que a palavra encontra coragem para nascer. Mas também aprendi — com Fanon e Kilomba — que há silêncios que foram impostos: silêncios da colonialidade, do racismo, da vergonha transmitida entre gerações.</p>
+            
+            <h3>Clínica viva: presença que sustenta</h3>
+            <p>A clínica viva é uma clínica que não se repete de forma mecânica. Ela não é um ritual automático. Ela é encontro — e encontro implica risco, criação, responsabilidade e presença. Escutar profundamente é deixar-se tocar sem perder o contorno.</p>
+            
+            <p><strong>Em essência, a escuta profunda é um ritmo que respeita a singularidade, um silêncio que sustenta, uma presença viva, uma ética que atravessa o fazer clínico, um gesto político e afetivo.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">×</span>
+            <h2>Racismo e subjetividade</h2>
+            <p><em>Como o racismo habita o inconsciente e o que a psicanálise pode oferecer</em></p>
+            
+            <p>O racismo não é apenas uma estrutura social. Ele é também uma inscrição psíquica. Ele atravessa o corpo, molda a forma como alguém se percebe, produz ausências, silenciamentos e expectativas que vão muito além do que conseguimos nomear.</p>
+            
+            <p>Frantz Fanon já dizia: "O negro não é. Ele torna-se." Torna-se pela violência que o mundo projeta sobre ele. Torna-se pela imagem que lhe é devolvida. Torna-se pelo não lugar onde sua subjetividade é empurrada.</p>
+            
+            <h3>O racismo como experiência psíquica</h3>
+            <p>O racismo opera no imaginário, no simbólico e no real. Ele não depende de intenção individual — ele se repete como estrutura, inscreve-se nos corpos e reaparece nos sonhos, nas escolhas afetivas, nos sintomas, nas culpas, nos silêncios, nas formas de amar e nas formas de sofrer.</p>
+            
+            <p>No inconsciente, o racismo funciona como uma ferida aberta: algo que não cicatriza e que retorna sob diferentes formas. Ele aparece na dificuldade de sentir-se digno, na sensação de estar sempre exposto, na culpa que não corresponde ao fato real, na vergonha do próprio corpo, na impossibilidade de desejar plenamente.</p>
+            
+            <h3>Fanon e o corpo que carrega o mundo</h3>
+            <p>Fanon nos ajuda a ver que o sofrimento racial não está apenas na mente: está no corpo. Um corpo que aprende a contrair-se para não chamar atenção. Que aprende a sorrir para não ser visto como ameaça. Que aprende a esquecer a própria dor para poder seguir vivo.</p>
+            
+            <h3>A psicanálise como espaço de restituição</h3>
+            <p>A psicanálise, quando se deixa atravessar por Fanon, Kilomba, Nelsa Santos, deixa de ser neutra. Ela se torna campo de cuidado radical. O trabalho analítico pode oferecer um espaço para existir sem o olhar racializado, um campo para nomear o indizível, um lugar para restaurar o desejo, e a chance de diferenciar sofrimento pessoal de violência estrutural.</p>
+            
+            <p><strong>Racismo e subjetividade não são temas externos à clínica. Eles são a clínica. Eles atravessam a dor, a fantasia, o sonho, a culpa, o sintoma.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">×</span>
+            <h2>Masculinidades possíveis</h2>
+            <p><em>Quando o homem aprende a respirar</em></p>
+            
+            <p>Falar sobre masculinidade, hoje, é falar de respiro. De reaprender gestos simples que muitos homens nunca puderam viver: sentir, pedir ajuda, não saber, recuar, existir sem armadura.</p>
+            
+            <p>A masculinidade hegemônica ensinou que vulnerabilidade é fraqueza, que o afeto torna o homem menor, que o silêncio é prova de força. Mas esse modelo cobra caro: produz solidão, violência, adoecimento e uma incapacidade profunda de reconhecer a própria dor.</p>
+            
+            <h3>Quando o corpo endurece para não desabar</h3>
+            <p>O homem foi treinado para não tremer. Para não expor dúvidas. Para manter o rosto firme mesmo quando tudo dentro rui. Mas o corpo não mente. Ele sinaliza o peso de uma masculinidade que sufoca: na tensão crônica, no cansaço sem nome, na irritação que explode, na dificuldade de intimidade.</p>
+            
+            <h3>O encontro com a vulnerabilidade</h3>
+            <p>A psicanálise ajuda a compreender que não existe potência sem fragilidade. Não existe autonomia sem dependência. Ser vulnerável não significa perder virilidade; significa abandonar uma virilidade imaginária que só existe quando o homem nega partes fundamentais de si.</p>
+            
+            <h3>O afeto como força que sustenta</h3>
+            <p>Fanon e Winnicott me ensinaram que o afeto é político. É criação. É uma das formas mais profundas de restituição de humanidade. Homens não são ensinados a cultivar vínculos — são ensinados a performar controle. Mas quando o afeto entra em cena, algo muda.</p>
+            
+            <h3>Reconstruir-se: o homem que aprende a respirar</h3>
+            <p>Reconstruir a masculinidade não é destruir o que existe, mas retirar o peso que nunca deveria ter sido colocado. É aprender a respirar sem se sentir fraco. É compreender que força não é invulnerabilidade — é flexibilidade emocional.</p>
+            
+            <p><strong>Uma masculinidade possível é aquela que não sufoca. Que não nega. Que não endurece tudo. É aquela que respira. E é nesse respiro que, muitas vezes, começa a transformação.</strong></p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">×</span>
+            <h2>Entre políticas públicas e inconsciente</h2>
+            <p><em>Notas de um psicólogo no SUAS</em></p>
+            
+            <p>Trabalhar no SUAS é aprender, todos os dias, que o sofrimento não começa nem termina no consultório. Ele nasce no território, circula entre casas, escolas, instituições, serviços que falham, redes que se rompem. Ele carrega a marca do desemprego, da fome, da violência, do racismo, das ausências do Estado.</p>
+            
+            <h3>O inconsciente também mora na periferia</h3>
+            <p>Há quem pense que o inconsciente é neutro, universal, desligado da vida concreta. Mas basta ouvir as histórias que atravessam o CRAS, CREAS, para perceber: o inconsciente é também social. Ele é estruturado, atravessado e ferido pelas desigualdades.</p>
+            
+            <h3>A clínica no território</h3>
+            <p>A clínica no SUAS não é uma adaptação da clínica tradicional. Ela é outra coisa. É um modo de estar ao lado. De sustentar sem invadir. De reconhecer a potência sem negar a dor. Winnicott chamaria de holding. Fanon chamaria de dignidade. Kilomba chamaria de descolonização da escuta.</p>
+            
+            <h3>Entre norma e desejo</h3>
+            <p>O SUAS demanda relatórios, fluxos, encaminhamentos, protocolos. Mas o que realmente move o cuidado é aquilo que não cabe no papel: o gesto de confiança de quem nunca confiou em ninguém, a primeira frase dita sem medo, o olhar que admite cansaço, a respiração que finalmente se solta.</p>
+            
+            <h3>Escutar desigualdades é escutar subjetividades</h3>
+            <p>Fanon nos lembra: "o que o mundo faz de mim é parte do que eu sou". No SUAS, isso se torna evidente. O sofrimento psíquico está enredado com políticas públicas, racismo estrutural, desigualdade urbana, violências históricas. Por isso, a escuta clínica no território não pode ser despolitizada.</p>
+            
+            <p><strong>A clínica no SUAS é uma clínica que pulsa. Que se contamina de realidade. Que se transforma a cada encontro. É a clínica onde subjetividade e desigualdade se encontram, onde o inconsciente aparece com outras cores, outras dores, outros caminhos.</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Menu Mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Toggle FAQ
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            const allButtons = document.querySelectorAll('.faq-question span');
+            
+            allAnswers.forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            allButtons.forEach(span => {
+                if (span !== button.querySelector('span')) {
+                    span.textContent = '+';
+                }
+            });
+            
+            answer.classList.toggle('active');
+            const span = button.querySelector('span');
+            span.textContent = answer.classList.contains('active') ? '−' : '+';
+        }
+
+        // Modal Functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        document.getElementById('navLinks').classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Prevent blog post links from navigating
+        document.querySelectorAll('.blog-post .ler-mais').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+        });
+    </script>
+            
+            
+            
+        
+
+        </body></html>
